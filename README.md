@@ -420,7 +420,9 @@ Por otra parte, durante la simulación de baja perfusión (Low Perfusion), confi
 Debido a esta condición, no fue posible establecer una comparación numérica entre los valores de referencia y los registrados por el monitor, por lo que no se calcularon los errores absoluto ni porcentual para este escenario. Este comportamiento pudo estar relacionado con una configuración inadecuada del equipo o con dificultades en la detección de la señal durante la simulación. Sin embargo, no se cuenta con evidencia suficiente para determinar la causa exacta.
 
 Considerando únicamente los tres escenarios con mediciones numéricas válidas, el error absoluto medio fue de 0 bpm para la frecuencia cardíaca y de 0 puntos porcentuales para la SpO₂. Estos resultados muestran una correspondencia entre las mediciones del monitor y los valores de referencia en las condiciones que pudieron verificarse. No obstante, la falla presentada durante la baja perfusión evidencia una limitación en la adquisición de la señal, que debe tenerse en cuenta al evaluar el desempeño del equipo.
+
 ---
+
 
 ## 5.3  Comparación entre las pruebas
 
