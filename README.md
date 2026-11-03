@@ -21,7 +21,7 @@ Los resultados permitieron observar la respuesta del monitor ante diferentes con
 
 ---
 
-# 2. Introducción
+# II. Introducción
 
 El monitoreo de variables cardiovasculares constituye una herramienta fundamental en la atención clínica, debido a que permite observar continuamente diferentes parámetros fisiológicos relacionados con el funcionamiento del sistema circulatorio y la oxigenación del organismo. Entre las variables más utilizadas se encuentran la frecuencia cardíaca y la saturación periférica de oxígeno (SpO2), cuyos cambios pueden proporcionar información importante sobre el estado fisiológico del paciente. Los pulsioxímetros permiten estimar estos parámetros de manera no invasiva mediante la interacción de la luz con los tejidos y la sangre [1].
 
@@ -35,7 +35,7 @@ De esta manera, la práctica permitió relacionar los fundamentos de la pulsioxi
 
 ---
 
-# 3. Marco teórico
+# III. Marco teórico
 
 ## 3.1. Monitor de signos vitales
 
@@ -129,7 +129,7 @@ Este indicador permite expresar la diferencia como porcentaje y facilita la comp
 
 ---
 
-# 4. Metodología
+# IV. Metodología
 
 ## 4.1. Materiales y equipos
 
@@ -153,6 +153,18 @@ Se realizaron dos pruebas experimentales siguiendo el procedimiento establecido 
 ### Prueba 1
 
 **Condición 1. Bradicardia**
+
+<p align="center">
+<img width="1280" height="960" 
+  alt="40_95" 
+  src="https://github.com/user-attachments/assets/d8efe648-14ba-4c04-b0bf-80873fd5e466" />
+
+</p>
+
+<p align="center">
+  <strong>Figura 1.</strong> Simulación de bradicardia durante la prueba 1.
+</p>
+
 
 Se configuró el simulador para representar una frecuencia cardíaca de 40 bpm y una SpO2 de 95 %. Se registraron los valores presentados por el monitor y se observó la señal fotopletismográfica.
 
@@ -187,7 +199,7 @@ Adicionalmente, se organizaron los resultados en tablas para facilitar la compar
 ---
 
 
-# 5. Resultados
+# V. Resultados
 
 Los resultados obtenidos durante la práctica se organizaron de acuerdo con las cuatro condiciones de simulación evaluadas en cada una de las dos pruebas experimentales. Para cada condición se presentan los parámetros configurados en el simulador Pronk OxSim OX-1, las lecturas registradas en el monitor Mindray uMEC 100 y la evidencia fotográfica correspondiente.
 
@@ -311,7 +323,7 @@ Una vez presentados los resultados individuales, se realiza una comparación de 
 
 En esta sección se presentan los errores absolutos y porcentuales, así como la respuesta de las alarmas y las observaciones relacionadas con las señales fotopletismográficas.
 
-# 6. Análisis de resultados
+# VI. Análisis de resultados
 
 ## 6.1. Comportamiento durante la simulación de bradicardia
 
@@ -365,7 +377,7 @@ Por lo tanto, los resultados deben interpretarse como una verificación funciona
 
 ---
 
-# 7. Discusión
+# VII. Discusión
 
 Los resultados obtenidos durante las dos pruebas permiten analizar la importancia de utilizar simuladores de parámetros fisiológicos para verificar el comportamiento de los monitores de signos vitales.
 
@@ -383,7 +395,7 @@ Finalmente, la realización de dos pruebas permitió repetir las mismas configur
 
 ---
 
-# 8. Conclusión
+# VIII. Conclusión
 
 La práctica permitió evaluar el funcionamiento del monitor de signos vitales Mindray uMEC 100 mediante el uso del simulador Pronk OxSim OX-1, utilizando diferentes condiciones de frecuencia cardíaca, saturación periférica de oxígeno e índice de perfusión.
 
@@ -397,7 +409,7 @@ En general, la práctica permitió relacionar los principios de funcionamiento d
 
 ---
 
-# 9. Referencias
+# REFERENCIAS
 
 [1] U.S. Food and Drug Administration (FDA), "Pulse Oximeters," FDA, 2025. [En línea]. Disponible en: https://www.fda.gov/medical-devices/products-and-medical-procedures/pulse-oximeters. [Consultado: 3-nov-2026].
 
