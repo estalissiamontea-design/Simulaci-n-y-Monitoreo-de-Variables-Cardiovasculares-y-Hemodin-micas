@@ -1,4 +1,4 @@
-# Simulaci-n-y-Monitoreo-de-Variables-Cardiovasculares-y-Hemodin-micas
+# Simulación y Monitoreo de Variables Cardiovasculares y Hemodinámicas
 
 Alissia Montealegre Quintero. 
 Raul Alexander Peñuela Jimenez.
