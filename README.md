@@ -186,120 +186,130 @@ Adicionalmente, se organizaron los resultados en tablas para facilitar la compar
 
 ---
 
+
 # 5. Resultados
 
-Los resultados se organizaron de acuerdo con las cuatro condiciones de simulación evaluadas durante las dos pruebas experimentales.
+Los resultados obtenidos durante la práctica se organizaron de acuerdo con las cuatro condiciones de simulación evaluadas en cada una de las dos pruebas experimentales. Para cada condición se presentan los parámetros configurados en el simulador Pronk OxSim OX-1, las lecturas registradas en el monitor Mindray uMEC 100 y la evidencia fotográfica correspondiente.
 
 ## 5.1. Resultados de la prueba 1
 
-En la primera prueba se realizaron las siguientes configuraciones:
+### 5.1.1. Simulación de bradicardia
 
-| Condición | Frecuencia cardíaca de referencia (bpm) | SpO2 de referencia (%) |
+Se configuró el simulador para generar una frecuencia cardíaca de 40 bpm y una saturación periférica de oxígeno del 95 %. Se registraron los valores presentados por el monitor Mindray uMEC 100, con el propósito de comparar las mediciones obtenidas con los parámetros de referencia.
+
+**Figura 1. Simulación de bradicardia durante la prueba 1.**
+
+![Prueba 1 - Bradicardia](../evidencias/prueba_1/bradicardia.jpg)
+
+| Variable | Valor de referencia | Valor del monitor |
 |---|---:|---:|
-| Bradicardia | 40 | 95 |
-| Disminución de SpO2 | 80 | 85 |
-| Baja perfusión | 80 | 99 |
-| Taquicardia | 140 | 98 |
+| Frecuencia cardíaca (bpm) | 40 | 40 |
+| SpO2 (%) | 95 | 95 |
 
-En el registro fotográfico de la primera condición se identificaron en el monitor valores de 40 bpm y 95 % de SpO2, correspondientes a los parámetros configurados en el simulador.
+### 5.1.2. Simulación de disminución de SpO2
 
-Para la condición de disminución de SpO2, la pantalla del monitor presentó valores de 80 bpm y 85 %, coincidentes con los valores de referencia establecidos.
+Se estableció el límite inferior de alarma de SpO2 en 90 %. Posteriormente, se configuró el simulador con una frecuencia cardíaca de 80 bpm y una saturación de oxígeno del 85 %. Se observó la respuesta del monitor ante una condición inferior al límite establecido.
 
-En el escenario de baja perfusión se seleccionó el modo correspondiente del simulador. La lectura numérica completa del monitor debe verificarse con el registro original antes de establecer el error de medición.
+**Figura 2. Simulación de desaturación durante la prueba 1.**
 
-Finalmente, durante la simulación de taquicardia, se observaron valores de 140 bpm y 98 % de SpO2 en el monitor.
+![Prueba 1 - Desaturación](../evidencias/prueba_1/desaturacion.jpg)
+
+| Variable | Valor de referencia | Valor del monitor |
+|---|---:|---:|
+| Frecuencia cardíaca (bpm) | 80 | 80 |
+| SpO2 (%) | 85 | 85 |
+
+### 5.1.3. Simulación de baja perfusión
+
+Se seleccionó el modo Low Perfusion del simulador, correspondiente a una SpO2 de 99 %, una frecuencia cardíaca de 80 bpm y un índice de perfusión aproximado de 0.2. Se observó la señal fotopletismográfica presentada en el monitor y su comportamiento durante esta condición.
+
+**Figura 3. Simulación de baja perfusión durante la prueba 1.**
+
+![Prueba 1 - Baja perfusión](../evidencias/prueba_1/baja_perfusion.jpg)
+
+| Variable | Valor de referencia |
+|---|---:|
+| Frecuencia cardíaca (bpm) | 80 |
+| SpO2 (%) | 99 |
+| Índice de perfusión | 0.2 |
+
+### 5.1.4. Simulación de taquicardia
+
+Se configuró el simulador para generar una frecuencia cardíaca de 140 bpm y una SpO2 del 98 %. Se registraron los valores mostrados por el monitor y se observó el comportamiento de la señal fotopletismográfica ante el incremento de la frecuencia cardíaca.
+
+**Figura 4. Simulación de taquicardia durante la prueba 1.**
+
+![Prueba 1 - Taquicardia](../evidencias/prueba_1/taquicardia.jpg)
+
+| Variable | Valor de referencia | Valor del monitor |
+|---|---:|---:|
+| Frecuencia cardíaca (bpm) | 140 | 140 |
+| SpO2 (%) | 98 | 98 |
+
+---
 
 ## 5.2. Resultados de la prueba 2
 
-En la segunda prueba se repitieron las cuatro condiciones de simulación.
+### 5.2.1. Simulación de bradicardia
 
-| Condición | Frecuencia cardíaca de referencia (bpm) | SpO2 de referencia (%) |
+Se repitió la configuración de bradicardia utilizando una frecuencia cardíaca de 40 bpm y una SpO2 del 95 %. Se registraron las mediciones presentadas por el monitor para comparar su comportamiento con respecto a la primera prueba.
+
+**Figura 5. Simulación de bradicardia durante la prueba 2.**
+
+![Prueba 2 - Bradicardia](../evidencias/prueba_2/bradicardia.jpg)
+
+| Variable | Valor de referencia | Valor del monitor |
 |---|---:|---:|
-| Bradicardia | 40 | 95 |
-| Disminución de SpO2 | 80 | 85 |
-| Baja perfusión | 80 | 99 |
-| Taquicardia | 140 | 98 |
+| Frecuencia cardíaca (bpm) | 40 | 40 |
+| SpO2 (%) | 95 | 95 |
 
-En el registro fotográfico de la condición de bradicardia se identificaron valores de 40 bpm y 95 % de SpO2 en el monitor.
+### 5.2.2. Simulación de disminución de SpO2
 
-Durante la simulación de disminución de saturación se observaron valores de 80 bpm y 85 % de SpO2.
+Se configuró nuevamente el límite inferior de alarma de SpO2 en 90 % y se generó una frecuencia cardíaca de 80 bpm con una saturación del 85 %. Se documentó la respuesta del monitor y el comportamiento de la señal.
 
-Para la condición de baja perfusión se seleccionó el modo Low Perfusion del simulador y se documentó el comportamiento del monitor mediante fotografías. La lectura exacta de todos los parámetros y la respuesta de las alarmas deben verificarse con los registros originales.
+**Figura 6. Simulación de desaturación durante la prueba 2.**
 
-En la última condición se configuró una frecuencia cardíaca de 140 bpm y una SpO2 de 98 %. Estos valores se identificaron en la pantalla del monitor.
+![Prueba 2 - Desaturación](../evidencias/prueba_2/desaturacion.jpg)
 
-## 5.3. Comparación de las mediciones
+| Variable | Valor de referencia | Valor del monitor |
+|---|---:|---:|
+| Frecuencia cardíaca (bpm) | 80 | 80 |
+| SpO2 (%) | 85 | 85 |
 
-La siguiente tabla resume los valores de referencia y las lecturas que pueden identificarse claramente en los registros fotográficos.
+### 5.2.3. Simulación de baja perfusión
 
-| Prueba | Condición | Variable | Referencia | Lectura identificada |
-|---|---|---|---:|---:|
-| 1 | Bradicardia | FC (bpm) | 40 | 40 |
-| 1 | Bradicardia | SpO2 (%) | 95 | 95 |
-| 1 | Desaturación | FC (bpm) | 80 | 80 |
-| 1 | Desaturación | SpO2 (%) | 85 | 85 |
-| 1 | Taquicardia | FC (bpm) | 140 | 140 |
-| 1 | Taquicardia | SpO2 (%) | 98 | 98 |
-| 2 | Bradicardia | FC (bpm) | 40 | 40 |
-| 2 | Bradicardia | SpO2 (%) | 95 | 95 |
-| 2 | Desaturación | FC (bpm) | 80 | 80 |
-| 2 | Desaturación | SpO2 (%) | 85 | 85 |
-| 2 | Taquicardia | FC (bpm) | 140 | 140 |
-| 2 | Taquicardia | SpO2 (%) | 98 | 98 |
+Se seleccionó el modo Low Perfusion del OxSim OX-1, estableciendo una SpO2 del 99 %, una frecuencia cardíaca de 80 bpm y un índice de perfusión aproximado de 0.2. Se observó la respuesta del monitor y las características de la señal fotopletismográfica.
 
-**Nota:** Los valores de la tabla corresponden a las lecturas numéricas identificables en las fotografías. El escenario Low Perfusion se mantiene separado debido a que no se dispone de una lectura suficientemente clara para establecer una comparación numérica confiable.
+**Figura 7. Simulación de baja perfusión durante la prueba 2.**
 
-## 5.4. Registro de alarmas
+![Prueba 2 - Baja perfusión](../evidencias/prueba_2/baja_perfusion.jpg)
 
-Durante las pruebas se modificaron los límites de alarma de SpO2 para evaluar la respuesta del monitor ante valores superiores o inferiores a los umbrales configurados.
+| Variable | Valor de referencia |
+|---|---:|
+| Frecuencia cardíaca (bpm) | 80 |
+| SpO2 (%) | 99 |
+| Índice de perfusión | 0.2 |
 
-| Condición | Límite configurado | Valor simulado | Respuesta que debía verificarse |
-|---|---|---|---|
-| Desaturación | Inferior: 90 % | 85 % | Alarma por SpO2 baja |
-| Baja perfusión | Superior: 97 % | 99 % | Alarma por SpO2 alta |
-| Taquicardia | Según configuración del monitor | 140 bpm | Alarma por frecuencia cardíaca elevada |
+### 5.2.4. Simulación de taquicardia
 
-La activación sonora y el tiempo exacto de respuesta deben establecerse a partir de los registros experimentales correspondientes. Las fotografías permiten documentar la pantalla, pero no confirmar por sí solas la presencia de una alarma sonora.
+Finalmente, se configuró una frecuencia cardíaca de 140 bpm y una SpO2 del 98 %. Se registraron las lecturas del monitor y se observó la señal fotopletismográfica generada durante esta condición.
 
-## 5.5. Cálculo de errores
+**Figura 8. Simulación de taquicardia durante la prueba 2.**
 
-Para las condiciones en las que se identificaron valores de referencia y lecturas del monitor, se aplica:
+![Prueba 2 - Taquicardia](../evidencias/prueba_2/taquicardia.jpg)
 
-**Error absoluto:**
-
-\[
-E_a=|V_m-V_r|
-\]
-
-**Error porcentual:**
-
-\[
-E_p=\frac{E_a}{V_r}\times100
-\]
-
-Por ejemplo, para la frecuencia cardíaca de la condición de bradicardia:
-
-\[
-E_a=|40-40|=0\ bpm
-\]
-
-\[
-E_p=\frac{0}{40}\times100=0\%
-\]
-
-Para la saturación de oxígeno:
-
-\[
-E_a=|95-95|=0\%
-\]
-
-\[
-E_p=\frac{0}{95}\times100=0\%
-\]
-
-Los cálculos definitivos deben incluir también las lecturas de baja perfusión cuando se confirme el valor mostrado por el monitor.
+| Variable | Valor de referencia | Valor del monitor |
+|---|---:|---:|
+| Frecuencia cardíaca (bpm) | 140 | 140 |
+| SpO2 (%) | 98 | 98 |
 
 ---
+
+## 5.3. Comparación general de las pruebas
+
+Una vez presentados los resultados individuales, se realiza una comparación de las mediciones obtenidas durante las dos pruebas, considerando las diferencias entre los valores de referencia y las lecturas del monitor.
+
+En esta sección se presentan los errores absolutos y porcentuales, así como la respuesta de las alarmas y las observaciones relacionadas con las señales fotopletismográficas.
 
 # 6. Análisis de resultados
 
