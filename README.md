@@ -162,7 +162,7 @@ Se realizaron dos pruebas experimentales siguiendo el procedimiento establecido 
 </p>
 
 <p align="center">
-  <strong>Figura 1.</strong> Simulación de bradicardia durante la prueba 1.
+  <strong>Figura 1.</strong> Configuración del simulador para la condición de bradicardia (40 bpm y SpO2 de 95 %).
 </p>
 
 
@@ -170,13 +170,38 @@ Se configuró el simulador para representar una frecuencia cardíaca de 40 bpm y
 
 **Condición 2. Disminución de SpO2**
 
+<p align="center">
+<img width="1280" height="960" alt="80_85" src="https://github.com/user-attachments/assets/f036ff8f-cbb9-4324-aa3c-9103891fc298" />
+
+</p>
+<p align="center">
+  <strong>Figura 2.</strong> Configuración del simulador para la condición de desaturación (80 bpm y SpO2 de 85 %).
+</p>
+
 Se estableció el límite inferior de alarma de SpO2 en 90 %. Posteriormente, se configuró el simulador para generar una frecuencia cardíaca de 80 bpm y una saturación de oxígeno de 85 %. Después de esperar cinco segundos, se verificó la respuesta visual y sonora del monitor.
 
 **Condición 3. Baja perfusión**
 
+<p align="center">
+<img width="960" height="1280" alt="Low_99" src="https://github.com/user-attachments/assets/9a5ffb4b-9668-4fd9-9034-806b1179b36f" />
+
+</p>
+<p align="center">
+  <strong>Figura 3.</strong> Selección del modo Low Perfusion en el simulador Pronk OxSim OX-1.
+</p>
+
 Se configuró el límite superior de alarma de SpO2 en 97 %. A continuación, se seleccionó el modo Low Perfusion del OxSim, correspondiente a una SpO2 de 99 %, una frecuencia cardíaca de 80 bpm y un índice de perfusión aproximado de 0.2. Se observó el comportamiento de la señal fotopletismográfica y la respuesta del monitor después de cinco segundos.
 
 **Condición 4. Taquicardia**
+
+<p align="center">
+<img width="1280" height="960" alt="140_98" src="https://github.com/user-attachments/assets/fdc33db4-1f87-403b-b076-deffc17c9491" />
+
+</p>
+<p align="center">
+  <strong>Figura 4.</strong> Configuración del simulador para la condición de taquicardia (140 bpm y SpO2 de 98 %).
+</p>
+
 
 Finalmente, se configuró el simulador para representar una frecuencia cardíaca de 140 bpm y una SpO2 de 98 %. Se registró la respuesta del monitor y se observó el comportamiento de la señal y las alarmas.
 
