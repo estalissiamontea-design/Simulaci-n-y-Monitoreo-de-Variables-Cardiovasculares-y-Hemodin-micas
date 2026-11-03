@@ -334,9 +334,7 @@ El error absoluto se determinó mediante la diferencia entre el valor medido y e
 | Taquicardia | SpO₂ (%) | 98 | 98 | 0 | 0 % |
 
 A partir de los resultados, se observa que el monitor presentó coincidencia con los valores de referencia en las condiciones de bradicardia, desaturación y taquicardia. En estos escenarios, los errores absolutos y porcentuales fueron iguales a cero para ambas variables.
-
 Por otra parte, durante la simulación de baja perfusión se registró una diferencia de un punto porcentual en la SpO₂, debido a que el monitor indicó 100 %, mientras que el simulador estaba configurado en 99 %. Esto representa un error porcentual aproximado del 1,01 %. La frecuencia cardíaca, por su parte, coincidió con el valor de referencia de 80 bpm.
-
 Considerando los cuatro escenarios, el error absoluto medio fue de 0 bpm para la frecuencia cardíaca y de 0,25 puntos porcentuales para la SpO₂. Esto indica que las diferencias numéricas fueron reducidas y que la mayor variación se presentó durante la condición de baja perfusión.
 
 ---
