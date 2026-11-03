@@ -234,9 +234,12 @@ Los resultados obtenidos durante la práctica se organizaron de acuerdo con las 
 
 Se configuró el simulador para generar una frecuencia cardíaca de 40 bpm y una saturación periférica de oxígeno del 95 %. Se registraron los valores presentados por el monitor Mindray uMEC 100, con el propósito de comparar las mediciones obtenidas con los parámetros de referencia.
 
-**Figura 1. Simulación de bradicardia durante la prueba 1.**
-
-![Prueba 1 - Bradicardia](../evidencias/prueba_1/bradicardia.jpg)
+<p align="center">
+<img width="1280" height="960" alt="Prueba1_1" src="https://github.com/user-attachments/assets/d9379b1f-ebe8-4a0c-8790-f78256014470" />
+</p>
+<p align="center">
+  <strong>Figura 5.</strong> Lectura del monitor durante la simulación de bradicardia (40 bpm y SpO2 de 95 %).
+</p>
 
 | Variable | Valor de referencia | Valor del monitor |
 |---|---:|---:|
@@ -245,11 +248,24 @@ Se configuró el simulador para generar una frecuencia cardíaca de 40 bpm y una
 
 ### 5.1.2. Simulación de disminución de SpO2
 
+<p align="center">
+  <img width="1280" height="960" alt="Limite_Inferior" src="https://github.com/user-attachments/assets/e19e14be-37eb-484a-a56b-0c30aa13e960" />
+</p>
+
+<p align="center">
+  <strong>Figura 6.</strong> Configuración del límite inferior de alarma de SpO2: límite superior de 97 % e inferior de 90 %.
+</p>
+
 Se estableció el límite inferior de alarma de SpO2 en 90 %. Posteriormente, se configuró el simulador con una frecuencia cardíaca de 80 bpm y una saturación de oxígeno del 85 %. Se observó la respuesta del monitor ante una condición inferior al límite establecido.
 
-**Figura 2. Simulación de desaturación durante la prueba 1.**
+<p align="center">
+<img width="1280" height="960" alt="Pureba1_2" src="https://github.com/user-attachments/assets/ce77d08e-0d6d-4e34-bafd-40b8cc1ff8be" />
 
-![Prueba 1 - Desaturación](../evidencias/prueba_1/desaturacion.jpg)
+</p>
+<p align="center">
+  <strong>Figura 7.</strong> Lectura del monitor ante una saturación de oxígeno del 85 %.
+</p>
+
 
 | Variable | Valor de referencia | Valor del monitor |
 |---|---:|---:|
@@ -258,11 +274,25 @@ Se estableció el límite inferior de alarma de SpO2 en 90 %. Posteriormente, se
 
 ### 5.1.3. Simulación de baja perfusión
 
-Se seleccionó el modo Low Perfusion del simulador, correspondiente a una SpO2 de 99 %, una frecuencia cardíaca de 80 bpm y un índice de perfusión aproximado de 0.2. Se observó la señal fotopletismográfica presentada en el monitor y su comportamiento durante esta condición.
+<p align="center">
+  <img width="1280" height="960" alt="Limite_superior" src="https://github.com/user-attachments/assets/a7440337-7f49-42dc-bc56-da92c8bdf172" />
 
-**Figura 3. Simulación de baja perfusión durante la prueba 1.**
+</p>
 
-![Prueba 1 - Baja perfusión](../evidencias/prueba_1/baja_perfusion.jpg)
+<p align="center">
+  <strong>Figura 8.</strong> Ajuste del límite superior de SpO2 a 100 %, manteniendo el límite inferior en 90 %.
+</p>
+
+Para esta condición, se configuró el límite superior de alarma de SpO2 en 97 %, manteniendo el límite inferior en 90 %, con el propósito de evaluar la respuesta del monitor ante una saturación superior al umbral establecido. Posteriormente, se seleccionó el modo *Low Perfusion* del simulador Pronk OxSim OX-1, correspondiente a una SpO2 de referencia del 99 %, una frecuencia cardíaca de 80 bpm y un índice de perfusión aproximado de 0.2.
+
+<p align="center">
+<img width="1280" height="960" alt="Prueba1_3" src="https://github.com/user-attachments/assets/d0545bbe-dd9f-4a43-ba42-aa0418c6f95a" />
+
+
+</p>
+<p align="center">
+  <strong>Figura 9.</strong> Lectura del monitor durante la simulación de baja perfusión.
+</p>
 
 | Variable | Valor de referencia |
 |---|---:|
@@ -274,9 +304,13 @@ Se seleccionó el modo Low Perfusion del simulador, correspondiente a una SpO2 d
 
 Se configuró el simulador para generar una frecuencia cardíaca de 140 bpm y una SpO2 del 98 %. Se registraron los valores mostrados por el monitor y se observó el comportamiento de la señal fotopletismográfica ante el incremento de la frecuencia cardíaca.
 
-**Figura 4. Simulación de taquicardia durante la prueba 1.**
+<p align="center">
+  <img width="1280" height="960" alt="Prueba1_4" src="https://github.com/user-attachments/assets/3ee4f8c5-82aa-476d-91fb-85cee5472066" />
 
-![Prueba 1 - Taquicardia](../evidencias/prueba_1/taquicardia.jpg)
+</p>
+<p align="center">
+  <strong>Figura 10.</strong> Lectura del monitor durante la simulación de taquicardia (140 bpm y SpO2 de 98 %).
+</p>
 
 | Variable | Valor de referencia | Valor del monitor |
 |---|---:|---:|
