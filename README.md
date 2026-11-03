@@ -138,7 +138,6 @@ Para el desarrollo de la práctica se utilizaron los siguientes equipos:
 - Monitor de signos vitales Mindray uMEC 100.
 - Simulador de parámetros hemodinámicos Pronk OxSim OX-1.
 - Sensor de pulsioximetría compatible con el simulador.
-- Registro fotográfico de las mediciones realizadas.
 
 ## 4.2. Preparación de los equipos
 
@@ -495,7 +494,7 @@ En consecuencia, los resultados permiten reconocer que el desempeño de un monit
 ---
 
 # VIII. Conclusión
-
+La práctica permitió comprobar el funcionamiento del monitor de signos vitales al someterlo a diferentes condiciones cardiovasculares simuladas. Al comparar los valores configurados en el simulador con las mediciones del equipo, se encontró que, tanto en la primera como en la segunda prueba, las lecturas de frecuencia cardíaca y saturación de oxígeno fueron cercanas a los valores de referencia durante la bradicardia, la desaturación y la taquicardia. No obstante, los resultados fueron diferentes durante la baja perfusión. En la primera prueba, el monitor registró una saturación de oxígeno del 100 %, frente al 99 % establecido en el simulador, mientras que en la segunda aparecieron los mensajes «Exceso de luz» y «Sin pulso», lo que impidió obtener una lectura válida. Esta diferencia puede estar relacionada con la dificultad del sensor para detectar adecuadamente la señal pulsátil cuando la perfusión es baja, aunque también es posible que hayan influido su posición o las condiciones de conexión. Por otra parte, durante la práctica se identificó la importancia de configurar correctamente las alarmas y prestar atención a los mensajes que presenta el equipo, ya que no solo indican cambios en las variables medidas, sino también posibles dificultades en la adquisición de las señales. Finalmente, se considera necesario repetir la prueba de baja perfusión, revisar la ubicación y conexión del sensor y realizar más ensayos que permitan comprobar si este comportamiento se mantiene bajo las mismas condiciones.
 
 
 ---
