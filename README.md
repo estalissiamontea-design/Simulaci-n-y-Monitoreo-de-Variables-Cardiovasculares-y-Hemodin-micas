@@ -452,8 +452,8 @@ El error absoluto se determinó mediante la diferencia en valor absoluto entre e
 | Bradicardia | SpO2 (%) | 95 | 95 | 0 | 0 % |
 | Desaturación | FC (bpm) | 80 | 80 | 0 | 0 % |
 | Desaturación | SpO2 (%) | 85 | 85 | 0 | 0 % |
-| Baja perfusión | FC (bpm) | 80 | Sin pulso | NAN | NAN |
-| Baja perfusión | SpO2 (%) | 99 | Exceso de luz | NAN | NAN |
+| Baja perfusión | FC (bpm) | 80 | Sin pulso | -- | -- |
+| Baja perfusión | SpO2 (%) | 99 | Exceso de luz | -- | -- |
 | Taquicardia | FC (bpm) | 140 | 140 | 0 | 0 % |
 | Taquicardia | SpO2 (%) | 98 | 98 | 0 | 0 % |
 
