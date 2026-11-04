@@ -254,7 +254,7 @@ La señal fotopletismográfica presenta oscilaciones periódicas y relativamente
 </p>
 
 <p align="center">
-  <strong>Figura 6.</strong> Configuración del límite inferior de alarma de SpO2: límite superior de 97 % e inferior de 90 %.
+  <strong>Figura 6.</strong> Configuración del límite inferior de alarma de SpO2 en 90 %.
 </p>
 
 Se estableció el límite inferior de alarma de SpO2 en 90 %. Posteriormente, se configuró el simulador con una frecuencia cardíaca de 80 bpm y una saturación de oxígeno del 85 %. Se observó la respuesta del monitor ante una condición inferior al límite establecido.
@@ -283,7 +283,7 @@ Durante la condición de desaturación se observa una señal fotopletismográfic
 </p>
 
 <p align="center">
-  <strong>Figura 8.</strong> Ajuste del límite superior de SpO2 a 100 %, manteniendo el límite inferior en 90 %.
+  <strong>Figura 8.</strong> Ajuste del límite superior de SpO2 a 97 %, manteniendo el límite inferior en 90 %.
 </p>
 
 Para esta condición, se configuró el límite superior de alarma de SpO2 en 97 %, manteniendo el límite inferior en 90 %, con el propósito de evaluar la respuesta del monitor ante una saturación superior al umbral establecido. Posteriormente, se seleccionó el modo *Low Perfusion* del simulador Pronk OxSim OX-1, correspondiente a una SpO2 de referencia del 99 %, una frecuencia cardíaca de 80 bpm y un índice de perfusión aproximado de 0.2.
@@ -326,7 +326,7 @@ La señal fotopletismográfica muestra un aumento evidente en la frecuencia de s
 
 #### Resultados stadísticos de los valores de referencia y los registrados en la prueba 1
 
-Para evaluar el comportamiento del monitor BeneHeart D30 durante la primera prueba, se compararon los valores configurados en el simulador Pronk OxSim OX-1 con las mediciones registradas en el monitor. Se calcularon el error absoluto y el error porcentual para la frecuencia cardíaca (FC) y la saturación periférica de oxígeno (SpO₂).
+Para evaluar el comportamiento del monitor Mindray uMEC 100 durante la primera prueba, se compararon los valores configurados en el simulador Pronk OxSim OX-1 con las mediciones registradas en el monitor. Se calcularon el error absoluto y el error porcentual para la frecuencia cardíaca (FC) y la saturación periférica de oxígeno (SpO₂).
 
 El error absoluto se determinó mediante la diferencia entre el valor medido y el valor de referencia, mientras que el error porcentual permitió establecer la magnitud de dicha diferencia respecto al valor configurado.
 
@@ -463,10 +463,27 @@ Considerando únicamente los tres escenarios con mediciones numéricas válidas,
 
 ---
 
+### 5.3. Verificación de alarmas del monitor
 
-## 5.3  Comparación entre las pruebas
+La siguiente tabla corresponde a la verificación de las alarmas solicitada en la Parte B de la guía. Las condiciones fisiológicas se establecieron en el simulador Pronk OxSim OX-1, mientras que en el monitor Mindray uMEC 100 se configuraron los límites de alarma correspondientes. Una vez establecidos los valores simulados, se esperó el intervalo de cinco segundos indicado en el procedimiento para comprobar la respuesta del equipo.
 
-Al comparar los resultados de las dos pruebas experimentales, se observa que el monitor BeneHeart D30 presentó un comportamiento similar en las condiciones de bradicardia, desaturación y taquicardia. En ambos ensayos, las mediciones de frecuencia cardíaca y saturación periférica de oxígeno coincidieron con los valores configurados en el simulador Pronk OxSim OX-1, por lo que los errores absoluto y porcentual fueron iguales a cero en estos tres escenarios.
+| Condición evaluada | Límite configurado en el uMEC 100 | Valor simulado en el OxSim | ¿Alarma activa? | Tiempo de respuesta |
+|---|---|---:|---|---|
+| SpO₂ baja | Inferior: 90 % | 85 % | Sí, se observó la indicación visual «SpO₂ bajo menor de 90 %» en la segunda prueba. | Verificación a los 5 s* |
+| SpO₂ alta (Low Perfusion) | Superior: 97 % | 99 % | No se confirmó la activación de la alarma específica de SpO₂ alta. En la segunda prueba aparecieron los mensajes «Sin pulso» y «Exceso de luz para SpO₂». | Verificación a los 5 s* |
+| Taquicardia | Superior: 120 bpm | 140 bpm | Sí, según el registro de la primera prueba. En la segunda no se confirmó visualmente. | No se registró el tiempo exacto. |
+
+Durante la simulación de SpO₂ baja, el valor establecido en el OxSim fue de 85 %, inferior al límite de alarma de 90 % configurado en el monitor. En la segunda prueba se registró la indicación visual de saturación baja, lo que evidencia la respuesta del equipo ante esta condición.
+
+Para el escenario de baja perfusión, se estableció un límite superior de SpO₂ de 97 % y se seleccionó el modo *Low Perfusion*, con una saturación simulada de 99 %. En la primera prueba, el monitor presentó una lectura de 100 %, mientras que en la segunda no proporcionó una medición válida y mostró los mensajes «Sin pulso» y «Exceso de luz para SpO₂». Por esta razón, no es posible confirmar que se haya activado específicamente la alarma de saturación alta.
+
+Finalmente, durante la simulación de taquicardia se establecieron 140 bpm en el OxSim, valor superior al límite de 120 bpm identificado en la configuración del monitor. En el registro de la primera prueba se reportó la activación de la alarma de frecuencia cardíaca elevada; sin embargo, en la segunda prueba no se identificó visualmente una indicación concluyente.
+
+---
+
+## 5.4  Comparación entre las pruebas
+
+Al comparar los resultados de las dos pruebas experimentales, se observa que el monitor Mindray uMEC 100 presentó un comportamiento similar en las condiciones de bradicardia, desaturación y taquicardia. En ambos ensayos, las mediciones de frecuencia cardíaca y saturación periférica de oxígeno coincidieron con los valores configurados en el simulador Pronk OxSim OX-1, por lo que los errores absoluto y porcentual fueron iguales a cero en estos tres escenarios.
 
 La principal diferencia se presentó durante la simulación de baja perfusión (Low Perfusion). En la primera prueba, el monitor registró una frecuencia cardíaca de 80 bpm y una SpO₂ de 100 %, frente a los valores de referencia de 80 bpm y 99 %, respectivamente. Esto representó un error absoluto de 0 bpm para la frecuencia cardíaca y de 1 punto porcentual para la saturación de oxígeno, equivalente a un error porcentual aproximado del 1,01 %.
 
