@@ -37,95 +37,96 @@ De esta manera, la práctica permitió relacionar los fundamentos de la pulsioxi
 
 # III. Marco teórico
 
-## 3.1. Monitor de signos vitales
+## 3.1. Monitor de signos vitales Mindray uMEC 100
 
-Un monitor de signos vitales es un equipo biomédico utilizado para adquirir, procesar y visualizar diferentes variables fisiológicas de un paciente. Dependiendo de su configuración, puede presentar parámetros como frecuencia cardíaca, frecuencia respiratoria, saturación periférica de oxígeno y presión arterial.
+El monitor de signos vitales Mindray uMEC 100 es un equipo biomédico destinado a la vigilancia de diferentes variables fisiológicas mediante la adquisición, el procesamiento y la visualización de parámetros como la frecuencia cardíaca y la saturación periférica de oxígeno. Su interfaz permite visualizar valores numéricos, formas de onda y alarmas asociadas con los parámetros monitorizados [3].
 
-El monitor Mindray uMEC 100 pertenece a la serie uMEC de monitores de pacientes y permite visualizar los parámetros medidos mediante una interfaz que integra valores numéricos, formas de onda y sistemas de alarma [3].
-
-Su funcionamiento permite al personal clínico realizar un seguimiento de las variables fisiológicas y reconocer posibles alteraciones mediante límites de alarma configurables. Estas alarmas pueden proporcionar indicaciones visuales y sonoras cuando una medición alcanza condiciones que requieren atención [3].
+El equipo dispone de límites de alarma configurables para identificar valores que superen los umbrales establecidos. Estas alarmas pueden proporcionar indicaciones visuales y sonoras, además de mensajes relacionados con las condiciones de adquisición de las señales. Por esta razón, durante su evaluación es importante diferenciar entre las alarmas fisiológicas y las indicaciones que advierten posibles dificultades en la medición [3].
 
 ## 3.2. Simulador de parámetros hemodinámicos Pronk OxSim OX-1
 
-El Pronk OxSim OX-1 es un simulador óptico de pulsioximetría utilizado para verificar el funcionamiento de monitores y sensores de SpO2. Su operación permite reproducir diferentes combinaciones de saturación de oxígeno, frecuencia cardíaca e índice de perfusión, sin necesidad de utilizar un paciente real [2].
+El Pronk OxSim OX-1 es un simulador óptico utilizado para comprobar el funcionamiento de sensores y monitores de pulsioximetría. Su operación permite reproducir diferentes condiciones mediante configuraciones específicas de saturación de oxígeno, frecuencia cardíaca e índice de perfusión, sin necesidad de utilizar un paciente real [2].
 
-El dispositivo cuenta con botones de selección que permiten cambiar entre los modos de simulación disponibles. Además, utiliza un sistema óptico sobre el cual se coloca el sensor de pulsioximetría del monitor que se desea evaluar [2].
+El dispositivo cuenta con diferentes modos de simulación que permiten evaluar la respuesta de los monitores ante condiciones fisiológicas determinadas. Para realizar la prueba, se selecciona el modo correspondiente y se coloca el sensor de pulsioximetría sobre la zona óptica del simulador, siguiendo las indicaciones del fabricante [2].
 
-Los cinco modos principales de simulación del OxSim OX-1 son:
-
-| Modo | SpO2 | Frecuencia cardíaca | Índice de perfusión aproximado |
-|---|---:|---:|---:|
-| 85 % | 85 % | 80 bpm | 2.0 |
-| 95 % | 95 % | 40 bpm | 2.0 |
-| 98 % | 98 % | 80 bpm | 2.0 |
-| 140 bpm | 98 % | 140 bpm | 2.0 |
-| Low Perfusion | 99 % | 80 bpm | 0.2 |
-
-Estos valores corresponden a las configuraciones descritas por el fabricante en el manual de operación del simulador [2].
+Los modos utilizados durante la práctica permitieron representar condiciones de bradicardia, desaturación, baja perfusión y taquicardia. Es importante considerar que las mediciones obtenidas dependen también de las características y tolerancias del sensor utilizado, por lo que los resultados deben interpretarse dentro de las condiciones de la prueba experimental [2].
 
 ## 3.3. Frecuencia cardíaca
 
-La frecuencia cardíaca corresponde al número de latidos que realiza el corazón durante un minuto y se expresa en latidos por minuto (bpm). Es una variable utilizada para evaluar el comportamiento del sistema cardiovascular.
+La frecuencia cardíaca corresponde al número de ciclos cardíacos que se producen durante un minuto y se expresa en latidos por minuto (bpm). Es una variable utilizada para evaluar el comportamiento del sistema cardiovascular.
 
-De acuerdo con las condiciones de operación del simulador OxSim OX-1, es posible reproducir diferentes frecuencias cardíacas para evaluar la respuesta del monitor. Entre estas condiciones se encuentran la bradicardia simulada a 40 bpm y la taquicardia simulada a 140 bpm [2].
+Durante la práctica se utilizaron diferentes configuraciones de frecuencia cardíaca en el simulador Pronk OxSim OX-1. Para representar la condición de bradicardia se estableció un valor de 40 bpm, mientras que para la condición de taquicardia se configuró una frecuencia de 140 bpm. Estos valores corresponden a los escenarios seleccionados para evaluar la respuesta del monitor durante el procedimiento experimental [2].
 
-La bradicardia y la taquicardia representan condiciones de frecuencia cardíaca anormalmente baja o elevada, respectivamente, cuya interpretación clínica depende del contexto del paciente.
+## 3.4. Saturación periférica de oxígeno (SpO₂)
 
-## 3.4. Saturación periférica de oxígeno (SpO2)
+La saturación periférica de oxígeno (SpO₂) representa una estimación del porcentaje de hemoglobina arterial que se encuentra unida al oxígeno. Su medición se realiza mediante la pulsioximetría, una técnica no invasiva que utiliza luz roja e infrarroja para estimar la oxigenación sanguínea [6], [7].
 
-La saturación periférica de oxígeno representa una estimación del porcentaje de hemoglobina que transporta oxígeno en la sangre arterial. Su medición se realiza mediante pulsioximetría, una técnica no invasiva que utiliza luz para estimar la oxigenación sanguínea [1].
+El principio de funcionamiento se basa en las diferencias de absorción óptica de la oxihemoglobina y la hemoglobina desoxigenada. A partir de la luz emitida y recibida por el sensor, el pulsioxímetro procesa las variaciones de intensidad para estimar la saturación de oxígeno [6].
 
-Los pulsioxímetros utilizan principalmente dos longitudes de onda: luz roja e infrarroja. La hemoglobina oxigenada y la desoxigenada presentan diferentes características de absorción óptica, lo que permite estimar la saturación mediante el procesamiento de la señal recibida por el sensor [2].
-
-La SpO2 es una variable importante para el monitoreo de pacientes, aunque su medición puede verse afectada por factores como la perfusión periférica deficiente, el movimiento, la temperatura y las características del tejido donde se ubica el sensor [1].
+Aunque la pulsioximetría permite realizar mediciones de manera continua y no invasiva, su precisión puede verse afectada por diferentes condiciones, entre ellas la perfusión periférica deficiente, el movimiento y otros factores que alteran la adquisición de la señal. Por esta razón, los valores obtenidos deben interpretarse considerando la calidad de la señal y las condiciones de medición [1], [6], [7].
 
 ## 3.5. Fotopletismografía
 
-La fotopletismografía (PPG) es una técnica óptica que permite detectar variaciones en el volumen sanguíneo de los tejidos mediante la interacción de la luz con la sangre circulante.
+La fotopletismografía (PPG) es una técnica óptica que permite identificar variaciones en el volumen sanguíneo de los tejidos mediante la detección de cambios en la luz transmitida o reflejada.
 
-En los pulsioxímetros, la señal fotopletismográfica representa las variaciones pulsátiles asociadas con el flujo sanguíneo arterial. El manual del Pronk OxSim explica que la señal óptica contiene una componente pulsátil (AC), relacionada con los cambios producidos por el pulso, y una componente continua (DC), asociada con las propiedades ópticas generales del tejido [2].
+En los sistemas de pulsioximetría, la señal fotopletismográfica presenta dos componentes principales:
 
-La forma de onda obtenida permite observar el comportamiento de las pulsaciones y proporciona información sobre la calidad de la señal adquirida por el monitor.
+- **Componente AC:** corresponde a la variación pulsátil asociada principalmente con los cambios de volumen sanguíneo arterial durante el ciclo cardíaco.
+- **Componente DC:** representa la contribución relativamente constante de los tejidos y de los componentes sanguíneos no pulsátiles.
+
+El pulsioxímetro analiza las variaciones de absorción de la luz roja e infrarroja y utiliza la relación entre sus componentes pulsátiles y no pulsátiles para estimar la saturación periférica de oxígeno mediante un proceso de calibración [6], [7].
+
+La forma de onda obtenida permite observar las variaciones pulsátiles y proporciona información sobre la calidad de la señal adquirida. Sin embargo, la presencia de una onda visible no garantiza por sí sola que el equipo pueda calcular valores numéricos válidos de frecuencia cardíaca o saturación de oxígeno [7].
 
 ## 3.6. Índice de perfusión y baja perfusión
 
-El índice de perfusión (PI) representa la relación entre el componente pulsátil y el componente no pulsátil de la señal fotopletismográfica. Se utiliza como indicador de la intensidad de la señal pulsátil detectada por el sensor [3].
+El índice de perfusión (PI) es un parámetro derivado de la señal fotopletismográfica que permite estimar la intensidad relativa del componente pulsátil con respecto al componente no pulsátil. Se utiliza como indicador de la intensidad de la señal pulsátil detectada por el sensor.
 
-Cuando existe una perfusión periférica reducida, la amplitud de la componente pulsátil puede disminuir, dificultando la detección de la señal por parte del pulsioxímetro. Esta condición puede generar dificultades en la adquisición de la señal y afectar la estabilidad de las mediciones [1], [4].
+Cuando existe una perfusión periférica reducida, la amplitud del componente pulsátil puede disminuir, dificultando su diferenciación respecto a otros componentes de la señal y al ruido presente durante la adquisición. Esta situación puede ocasionar lecturas inestables, valores inexactos o ausencia de medición [4], [7].
 
-El modo Low Perfusion del OxSim OX-1 reproduce una condición de baja perfusión mediante una configuración de SpO2 de 99 %, frecuencia cardíaca de 80 bpm e índice de perfusión aproximado de 0.2 [2].
+Durante la práctica se utilizó el modo *Low Perfusion* del simulador Pronk OxSim OX-1, configurado con una SpO₂ de referencia del 99 %, una frecuencia cardíaca de 80 bpm y un índice de perfusión aproximado de 0.2. Esta condición permitió evaluar la respuesta del monitor ante una señal óptica de baja intensidad pulsátil [2].
 
 ## 3.7. Sistemas de alarma
 
-Los sistemas de alarma de los monitores de signos vitales permiten identificar mediciones que superan los límites establecidos por el operador. Para ello, se configuran valores superiores e inferiores que funcionan como umbrales de vigilancia.
+Los sistemas de alarma de los monitores de signos vitales permiten advertir al operador cuando una variable fisiológica alcanza o supera los límites establecidos. Para ello, se configuran valores superiores e inferiores que funcionan como umbrales de vigilancia.
 
-Durante la práctica se utilizaron límites de alarma de SpO2 de 90 % para el límite inferior y 97 % para el límite superior. Estas configuraciones permitieron evaluar la respuesta del monitor ante condiciones de desaturación y saturación elevada.
+Durante la práctica se modificaron los límites de alarma del monitor Mindray uMEC 100 para evaluar su respuesta ante diferentes condiciones simuladas de frecuencia cardíaca y saturación periférica de oxígeno. La verificación de estos sistemas debe considerar las indicaciones visuales, las señales audibles y el tiempo transcurrido entre la generación de la condición simulada y la respuesta del equipo [3], [5].
 
-La verificación de alarmas debe considerar tanto la indicación visual como la sonora, además del tiempo transcurrido entre la generación de la condición simulada y la respuesta del equipo. La FDA contempla la evaluación de los indicadores y alarmas visuales y audibles dentro de las pruebas de desempeño de los pulsioxímetros [5].
+La evaluación de las alarmas debe diferenciar entre una condición que supera un límite configurado y la confirmación de que el monitor efectivamente generó una indicación visual o sonora. La FDA contempla la evaluación de los indicadores y las alarmas visuales y audibles dentro de las pruebas de desempeño de los pulsioxímetros [5].
 
 ## 3.8. Error absoluto y error porcentual
 
-Para evaluar las diferencias entre los valores configurados en el simulador y los valores presentados por el monitor, se utilizan indicadores de error.
+Para evaluar las diferencias entre los valores configurados en el simulador y los valores presentados por el monitor, se utilizan indicadores de error que permiten cuantificar la discrepancia entre una medición y su valor de referencia [8].
 
-El error absoluto representa la diferencia en magnitud entre el valor medido y el valor de referencia:
+El error absoluto representa la magnitud de la diferencia entre el valor medido y el valor de referencia:
 
 \[
 E_a = |V_m - V_r|
 \]
 
+El error relativo relaciona el error absoluto con la magnitud del valor de referencia:
+
+\[
+E_r = \frac{|V_m - V_r|}{|V_r|}
+\]
+
+Para expresar esta diferencia en porcentaje se utiliza:
+
+\[
+E_p = \frac{|V_m - V_r|}{|V_r|}\times 100
+\]
+
 Donde:
 
 - \(E_a\): error absoluto.
-- \(V_m\): valor mostrado por el monitor.
+- \(E_r\): error relativo.
+- \(E_p\): error porcentual.
+- \(V_m\): valor registrado por el monitor.
 - \(V_r\): valor de referencia configurado en el simulador.
 
-El error porcentual expresa el error absoluto en relación con el valor de referencia:
+El error absoluto permite expresar la magnitud de la diferencia entre los valores comparados, mientras que el error porcentual facilita su interpretación en relación con el valor de referencia [8].
 
-\[
-E_p = \frac{|V_m-V_r|}{|V_r|}\times 100
-\]
-
-Este indicador permite expresar la diferencia como porcentaje y facilita la comparación entre mediciones de diferentes magnitudes.
+En esta práctica, el error absoluto de la frecuencia cardíaca se expresa en bpm, mientras que para la saturación de oxígeno se expresa en puntos porcentuales. El error porcentual, por su parte, representa la diferencia relativa respecto al valor de referencia.
 
 ---
 
@@ -297,13 +298,13 @@ Para esta condición, se configuró el límite superior de alarma de SpO2 en 97 
   <strong>Figura 9.</strong> Lectura del monitor durante la simulación de baja perfusión.
 </p>
 
-| Variable | Valor de referencia |
-|---|---:|
-| Frecuencia cardíaca (bpm) | 80 |
-| SpO2 (%) | 99 |
-| Índice de perfusión | 0.2 |
+| Variable | Valor de referencia del OxSim | Valor presentado por el uMEC 100 |
+|---|---:|---:|
+| Frecuencia cardíaca (bpm) | 80 | 80 |
+| SpO₂ (%) | 99 | 100 |
+| Índice de perfusión (PI) | 0,2 | 0,45 |
 
-En esta condición, el simulador se configuró en modo Low Perfusion para representar una disminución de la perfusión periférica. En la pantalla del monitor se observa que la señal fotopletismográfica presenta cambios en su morfología y una apariencia menos uniforme en comparación con las condiciones anteriores. Este comportamiento se relaciona con la reducción de la componente pulsátil de la señal, que puede dificultar la identificación de las variaciones de volumen sanguíneo utilizadas por el pulsioxímetro para estimar la saturación de oxígeno. A pesar de estas condiciones, durante esta primera prueba el monitor logró proporcionar una lectura de SpO₂ del 100 %, frente al 99 % configurado en el simulador. La diferencia observada fue de un punto porcentual, lo que evidencia que el equipo pudo obtener una medición numérica, aunque bajo una condición de adquisición menos favorable. Además, se había establecido un límite superior de alarma del 97 %, por lo que la lectura obtenida superaba dicho umbral.
+La onda fotopletismográfica muestra variaciones cíclicas del volumen sanguíneo arterial periférico, con un ascenso pronunciado asociado a la llegada de sangre durante la sístole y un descenso progresivo durante la diástole. Aunque se conserva un patrón pulsátil reconocible, la condición de baja perfusión se refleja en una menor contribución del componente pulsátil respecto a la señal óptica total. En este caso, el índice de perfusión configurado en el simulador fue de 0,2, mientras que el monitor indicó 0,45. Esta diferencia muestra que ambos equipos presentaron valores distintos para este parámetro durante la simulación.
 
 ### 5.1.4. Simulación de taquicardia
 
@@ -467,31 +468,27 @@ Considerando únicamente los tres escenarios con mediciones numéricas válidas,
 
 La siguiente tabla corresponde a la verificación de las alarmas solicitada en la Parte B de la guía. Las condiciones fisiológicas se establecieron en el simulador Pronk OxSim OX-1, mientras que en el monitor Mindray uMEC 100 se configuraron los límites de alarma correspondientes. Una vez establecidos los valores simulados, se esperó el intervalo de cinco segundos indicado en el procedimiento para comprobar la respuesta del equipo.
 
-| Condición evaluada | Límite configurado en el uMEC 100 | Valor simulado en el OxSim | ¿Alarma activa? | Tiempo de respuesta |
+| Condición evaluada | Límite configurado en el uMEC 100 | Valor simulado en el OxSim | ¿Alarma activa? | Tiempo de verificación |
 |---|---|---:|---|---|
-| SpO₂ baja | Inferior: 90 % | 85 % | Sí, se observó la indicación visual «SpO₂ bajo menor de 90 %» en ambas pruebas. | Verificación a los 5 s |
-| SpO₂ alta (Low Perfusion) | Superior: 97 % | 99 % |  Sí se observó la indicación visual en la primera prueba. En la segunda prueba No se confirmó la activación de la alarma específica de SpO₂ alta, aparecieron los mensajes "Sin pulso" y "Exceso de luz para SpO₂". | Verificación a los 5 s |
-| Taquicardia | Superior: 120 bpm | 140 bpm | Sí, según el registro de la primera prueba. En la segunda no se confirmó visualmente. | Verificación a los 4 s |
+| SpO₂ baja | Inferior: 90 % | 85 % | Sí. Se observó la indicación visual "SpO₂ bajo menor de 90 %" en ambas pruebas. | 5 s |
+| SpO₂ alta (Low Perfusion) | Superior: 97 % | 99 % | En la primera prueba se observó la indicación visual "SpO₂ alto > 97". En la segunda no se confirmó la activación de esta alarma; aparecieron los mensajes "Sin pulso" y "Exceso de luz para SpO₂". | 5 s |
+| Taquicardia | Superior: 120 bpm | 140 bpm | Sí, según el registro de la primera prueba. En la segunda no se confirmó visualmente. | 4 s |
 
-Durante la simulación de SpO₂ baja, el valor establecido en el OxSim fue de 85 %, inferior al límite de alarma de 90 % configurado en el monitor. En la segunda prueba se registró la indicación visual de saturación baja, lo que evidencia la respuesta del equipo ante esta condición.
+Los resultados evidencian que el monitor Mindray uMEC 100 respondió de manera adecuada ante la disminución de la saturación de oxígeno, al generar la indicación visual correspondiente en ambas pruebas. En cambio, durante la condición de baja perfusión se observó una diferencia entre los ensayos: en el primero se presentó la alarma por SpO₂ elevada, mientras que en el segundo la ausencia de una lectura válida impidió verificar su activación. Esto muestra que la disponibilidad y la calidad de la señal pueden influir en la evaluación del sistema de alarmas.
 
-Para el escenario de baja perfusión, se estableció un límite superior de SpO₂ de 97 % y se seleccionó el modo *Low Perfusion*, con una saturación simulada de 99 %. En la primera prueba, el monitor presentó una lectura de 100 %, mientras que en la segunda no proporcionó una medición válida y mostró los mensajes «Sin pulso» y «Exceso de luz para SpO₂». Por esta razón, no es posible confirmar que se haya activado específicamente la alarma de saturación alta.
-
-Finalmente, durante la simulación de taquicardia se establecieron 140 bpm en el OxSim, valor superior al límite de 120 bpm identificado en la configuración del monitor. En el registro de la primera prueba se reportó la activación de la alarma de frecuencia cardíaca elevada; sin embargo, en la segunda prueba no se identificó visualmente una indicación concluyente.
+En cuanto a la taquicardia, la activación visual se registró únicamente en la primera prueba, por lo que no se cuenta con evidencia suficiente para establecer que la respuesta del monitor fue reproducible en ambos ensayos. En general, los resultados permiten identificar respuestas satisfactorias en algunas condiciones, pero también muestran limitaciones en la verificación de las alarmas cuando el equipo no logra obtener mediciones válidas. Cabe señalar que los tiempos consignados corresponden a los intervalos de verificación utilizados durante la práctica y no necesariamente al tiempo real de activación de las alarmas.
 
 ---
 
 ## 5.4  Comparación entre las pruebas
 
-Al comparar los resultados de las dos pruebas experimentales, se observa que el monitor Mindray uMEC 100 presentó un comportamiento similar en las condiciones de bradicardia, desaturación y taquicardia. En ambos ensayos, las mediciones de frecuencia cardíaca y saturación periférica de oxígeno coincidieron con los valores configurados en el simulador Pronk OxSim OX-1, por lo que los errores absoluto y porcentual fueron iguales a cero en estos tres escenarios.
+La evaluación estadística se realizó mediante el cálculo del error absoluto, el error porcentual y el error absoluto medio (EAM), con el propósito de cuantificar las diferencias entre los valores configurados en el simulador Pronk OxSim OX-1 y los registrados por el monitor Mindray uMEC 100. Estos indicadores permitieron analizar la correspondencia de las mediciones para la frecuencia cardíaca (FC) y la saturación periférica de oxígeno (SpO₂) en los escenarios evaluados.
 
-La principal diferencia se presentó durante la simulación de baja perfusión (Low Perfusion). En la primera prueba, el monitor registró una frecuencia cardíaca de 80 bpm y una SpO₂ de 100 %, frente a los valores de referencia de 80 bpm y 99 %, respectivamente. Esto representó un error absoluto de 0 bpm para la frecuencia cardíaca y de 1 punto porcentual para la saturación de oxígeno, equivalente a un error porcentual aproximado del 1,01 %.
+En la primera prueba, la frecuencia cardíaca presentó una diferencia absoluta de cero en las cuatro condiciones, lo que demuestra una coincidencia entre los valores de referencia y los registrados por el monitor. Para la SpO₂, se obtuvo el mismo comportamiento en tres escenarios; sin embargo, durante la baja perfusión se presentó una diferencia de un punto porcentual, debido a que el simulador estaba configurado en 99 % y el monitor indicó 100 %. Esta diferencia corresponde a un error porcentual aproximado del 1,01 %. Al considerar los cuatro escenarios, el EAM fue de 0 bpm para la frecuencia cardíaca y de 0,25 puntos porcentuales para la SpO₂.
 
-En contraste, durante la segunda prueba, el monitor no proporcionó una lectura válida para esta misma condición. En la pantalla aparecieron los mensajes "Exceso de luz" para SpO₂ y "Sin pulso" para la frecuencia cardíaca, lo que impidió realizar los cálculos de error correspondientes. Por tanto, mientras que en el primer ensayo se obtuvo una lectura numérica, en el segundo se presentó una dificultad en la adquisición de las señales.
+En la segunda prueba, los tres escenarios con mediciones válidas presentaron diferencias absolutas de cero para ambas variables. Por consiguiente, se obtuvo un EAM de 0 bpm para la frecuencia cardíaca y de 0 puntos porcentuales para la SpO₂. No obstante, estos resultados corresponden únicamente a tres condiciones, ya que durante la baja perfusión el monitor no proporcionó valores numéricos válidos debido a los mensajes «Sin pulso» y «Exceso de luz para SpO₂». En consecuencia, no fue posible calcular los errores para este escenario.
 
-Esta diferencia evidencia que el comportamiento del monitor no fue completamente reproducible entre ambos ensayos bajo la condición de baja perfusión. Aunque se sospecha que una configuración inadecuada del equipo pudo influir en el resultado de la segunda prueba, no se cuenta con información suficiente para confirmar esta causa.
-
-En general, los resultados muestran una respuesta consistente del monitor en las condiciones de bradicardia, desaturación y taquicardia. Sin embargo, la diferencia observada en baja perfusión evidencia la importancia de verificar la configuración del equipo y las condiciones de adquisición antes de interpretar las mediciones. Asimismo, demuestra que la evaluación del monitor debe considerar tanto la coincidencia de los valores numéricos como su capacidad para detectar y procesar adecuadamente las señales fisiológicas.
+Al comparar los resultados, se observa que la frecuencia cardíaca presentó una correspondencia exacta con los valores de referencia en todas las condiciones que permitieron obtener mediciones. En la SpO₂, la diferencia registrada durante la primera prueba fue reducida; sin embargo, la ausencia de datos en la segunda prueba impide establecer una comparación estadística completa para la condición de baja perfusión. También es importante señalar que el EAM de cero obtenido en el segundo ensayo no representa necesariamente un mejor desempeño, puesto que se calculó con un escenario menos que en la primera prueba.
 
 # VI. Análisis de resultados
 
