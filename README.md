@@ -245,6 +245,8 @@ Se configuró el simulador para generar una frecuencia cardíaca de 40 bpm y una
 | Frecuencia cardíaca (bpm) | 40 | 40 |
 | SpO2 (%) | 95 | 95 |
 
+La señal fotopletismográfica presenta oscilaciones periódicas y relativamente uniformes, en correspondencia con la frecuencia cardíaca de 40 bpm configurada en el simulador. Se observa una mayor separación entre los pulsos consecutivos, característica asociada con una frecuencia cardíaca reducida, ya que transcurre más tiempo entre cada ciclo pulsátil. A pesar de esta disminución en la frecuencia, la onda conserva una morfología reconocible y una periodicidad estable, lo que indica que el monitor logró identificar adecuadamente la señal pulsátil y representar el comportamiento esperado durante la condición de bradicardia. Asimismo, la saturación de oxígeno se mantuvo en el valor de referencia del 95 %, sin que se evidenciaran alteraciones importantes en la forma de onda.
+
 ### 5.1.2. Simulación de disminución de SpO2
 
 <p align="center">
@@ -270,6 +272,8 @@ Se estableció el límite inferior de alarma de SpO2 en 90 %. Posteriormente, se
 |---|---:|---:|
 | Frecuencia cardíaca (bpm) | 80 | 80 |
 | SpO2 (%) | 85 | 85 |
+
+Durante la condición de desaturación se observa una señal fotopletismográfica con oscilaciones periódicas, cuya frecuencia corresponde a los 80 bpm establecidos en el simulador. En comparación con la condición anterior, los pulsos aparecen más próximos entre sí, lo que refleja el incremento de la frecuencia cardíaca. Aunque la saturación de oxígeno disminuyó hasta el 85 %, la señal conserva un patrón pulsátil definido, lo que permite observar que la reducción de la SpO₂ no necesariamente produce una disminución proporcional de la amplitud de la onda. Esto se debe a que la fotopletismografía representa las variaciones del volumen sanguíneo periférico, mientras que la saturación corresponde a la proporción de hemoglobina que transporta oxígeno. Por tanto, ambas variables están relacionadas con la actividad cardiovascular, pero describen fenómenos diferentes.
 
 ### 5.1.3. Simulación de baja perfusión
 
@@ -299,6 +303,8 @@ Para esta condición, se configuró el límite superior de alarma de SpO2 en 97 
 | SpO2 (%) | 99 |
 | Índice de perfusión | 0.2 |
 
+En esta condición, el simulador se configuró en modo Low Perfusion para representar una disminución de la perfusión periférica. En la pantalla del monitor se observa que la señal fotopletismográfica presenta cambios en su morfología y una apariencia menos uniforme en comparación con las condiciones anteriores. Este comportamiento se relaciona con la reducción de la componente pulsátil de la señal, que puede dificultar la identificación de las variaciones de volumen sanguíneo utilizadas por el pulsioxímetro para estimar la saturación de oxígeno. A pesar de estas condiciones, durante esta primera prueba el monitor logró proporcionar una lectura de SpO₂ del 100 %, frente al 99 % configurado en el simulador. La diferencia observada fue de un punto porcentual, lo que evidencia que el equipo pudo obtener una medición numérica, aunque bajo una condición de adquisición menos favorable. Además, se había establecido un límite superior de alarma del 97 %, por lo que la lectura obtenida superaba dicho umbral.
+
 ### 5.1.4. Simulación de taquicardia
 
 Se configuró el simulador para generar una frecuencia cardíaca de 140 bpm y una SpO2 del 98 %. Se registraron los valores mostrados por el monitor y se observó el comportamiento de la señal fotopletismográfica ante el incremento de la frecuencia cardíaca.
@@ -315,6 +321,8 @@ Se configuró el simulador para generar una frecuencia cardíaca de 140 bpm y un
 |---|---:|---:|
 | Frecuencia cardíaca (bpm) | 140 | 140 |
 | SpO2 (%) | 98 | 98 |
+
+La señal fotopletismográfica muestra un aumento evidente en la frecuencia de sus oscilaciones, con pulsos más cercanos entre sí en comparación con las condiciones de bradicardia y desaturación. Este comportamiento corresponde al incremento de la frecuencia cardíaca hasta 140 bpm, debido a que el intervalo de tiempo entre cada pulso disminuye a medida que aumenta el número de latidos por minuto. A pesar de la mayor frecuencia, la onda conserva un patrón periódico y una morfología relativamente uniforme, lo que permite reconocer los ciclos pulsátiles de manera continua. Por otra parte, la saturación de oxígeno se mantuvo en el 98 %, sin presentar una variación relevante respecto al valor configurado. En esta condición también se observó la activación de la alarma de frecuencia cardíaca elevada, en concordancia con el valor simulado y los límites de alarma establecidos en el monitor.
 
 #### Resultados stadísticos de los valores de referencia y los registrados en la prueba 1
 
@@ -345,81 +353,117 @@ Considerando los cuatro escenarios, el error absoluto medio fue de 0 bpm para la
 
 Se repitió la configuración de bradicardia utilizando una frecuencia cardíaca de 40 bpm y una SpO2 del 95 %. Se registraron las mediciones presentadas por el monitor para comparar su comportamiento con respecto a la primera prueba.
 
-**Figura 5. Simulación de bradicardia durante la prueba 2.**
+<p align="center">
+  <img width="1280" height="960" alt="Prueba2_1" src="https://github.com/user-attachments/assets/af24da72-e20b-4168-b30f-68bbf22df2e1" />
 
-![Prueba 2 - Bradicardia](../evidencias/prueba_2/bradicardia.jpg)
+</p>
+<p align="center">
+  <strong>Figura 11.</strong> Lectura del monitor durante la simulación de bradicardia durante la prueba 2.
+</p>
 
 | Variable | Valor de referencia | Valor del monitor |
 |---|---:|---:|
 | Frecuencia cardíaca (bpm) | 40 | 40 |
 | SpO2 (%) | 95 | 95 |
 
+La onda fotopletismográfica presenta un patrón periódico, con pulsos ampliamente separados y una morfología relativamente uniforme. Esta separación se relaciona con la disminución de la frecuencia cardíaca, debido a que el intervalo entre cada ciclo pulsátil aumenta cuando se reduce el número de latidos por minuto. A pesar de esta condición, el monitor conserva una señal claramente identificable y registra correctamente los valores de frecuencia cardíaca y saturación de oxígeno configurados en el simulador. También se observa el aviso de derivación de ECG desconectada; sin embargo, el equipo indica que el origen de la frecuencia cardíaca es SpO2, por lo que la medición se obtiene a través de la señal del pulsioxímetro.
+
 ### 5.2.2. Simulación de disminución de SpO2
 
 Se configuró nuevamente el límite inferior de alarma de SpO2 en 90 % y se generó una frecuencia cardíaca de 80 bpm con una saturación del 85 %. Se documentó la respuesta del monitor y el comportamiento de la señal.
 
-**Figura 6. Simulación de desaturación durante la prueba 2.**
-
-![Prueba 2 - Desaturación](../evidencias/prueba_2/desaturacion.jpg)
+<p align="center">
+  <img width="1280" height="960" alt="Prueba2_2" src="https://github.com/user-attachments/assets/a236ce88-7c4e-4198-a195-9680d6799e69" />
+  
+</p>
+<p align="center">
+  <strong>Figura 12.</strong> Lectura del monitor durante la simulación de desaturación durante la prueba 2.
+</p>
 
 | Variable | Valor de referencia | Valor del monitor |
 |---|---:|---:|
 | Frecuencia cardíaca (bpm) | 80 | 80 |
 | SpO2 (%) | 85 | 85 |
 
+La onda fotopletismográfica conserva una secuencia de pulsos periódicos y definidos, aunque estos se encuentran más próximos entre sí en comparación con la condición de bradicardia. Este comportamiento corresponde al aumento de la frecuencia cardíaca, ya que el intervalo entre los ciclos pulsátiles disminuye. Adicionalmente, se observa la activación de la alarma de saturación baja, identificada mediante el mensaje «SpO2 bajo menor de 90 %», lo cual concuerda con el límite inferior configurado en el monitor. La conservación de una señal pulsátil reconocible, a pesar de la disminución de la saturación, permite observar que la desaturación no necesariamente produce una alteración evidente en la periodicidad o morfología de la onda fotopletismográfica.
+
 ### 5.2.3. Simulación de baja perfusión
 
 Se seleccionó el modo Low Perfusion del OxSim OX-1, estableciendo una SpO2 del 99 %, una frecuencia cardíaca de 80 bpm y un índice de perfusión aproximado de 0.2. Se observó la respuesta del monitor y las características de la señal fotopletismográfica.
 
-**Figura 7. Simulación de baja perfusión durante la prueba 2.**
+<p align="center">
+  <img width="1280" height="960" alt="Prueba2_3_1" src="https://github.com/user-attachments/assets/275af680-2ee1-4b5a-b641-73cf9686ab07" />
 
-![Prueba 2 - Baja perfusión](../evidencias/prueba_2/baja_perfusion.jpg)
+</p>
+<p align="center">
+  <strong>Figura 13.</strong> Primera captura de la señal fotopletismográfica durante la simulación de baja perfusión en la prueba 2.
+</p>
 
-| Variable | Valor de referencia |
-|---|---:|
-| Frecuencia cardíaca (bpm) | 80 |
-| SpO2 (%) | 99 |
-| Índice de perfusión | 0.2 |
+En la primera captura se observa que el monitor continúa mostrando una onda fotopletismográfica periódica, con oscilaciones reconocibles y una morfología relativamente estable. Sin embargo, el equipo presenta los mensajes «Sin pulso» y «Exceso de luz para SpO2», sin proporcionar valores numéricos válidos de frecuencia cardíaca y saturación de oxígeno. Esto evidencia que la presencia visual de una onda en pantalla no garantiza que el monitor pueda identificarla y procesarla correctamente para calcular las variables fisiológicas. Por tanto, aunque se conserva una representación gráfica de las oscilaciones, el equipo no logra validar la señal para realizar las mediciones correspondientes.
+
+**Figura 8. Segunda captura de la señal fotopletismográfica durante la simulación de baja perfusión en la prueba 2.**
+
+<p align="center">
+  <img width="1280" height="960" alt="Prueba2_3_2" src="https://github.com/user-attachments/assets/00783af0-4f19-41fe-882b-fb53d8dd0636" />
+
+</p>
+<p align="center">
+  <strong>Figura 14.</strong> Segunda captura de la señal fotopletismográfica durante la simulación de baja perfusión en la prueba 2.
+</p>
+
+En la segunda captura se aprecia un cambio en la apariencia de la onda fotopletismográfica respecto al registro anterior. Las oscilaciones presentan una forma más marcada y continua, con picos y valles visualmente más pronunciados. No obstante, esta variación no se acompaña de una recuperación de las mediciones, ya que el monitor mantiene los mensajes «Sin pulso» y «Exceso de luz para SpO2», sin proporcionar valores numéricos válidos de frecuencia cardíaca ni saturación de oxígeno. Este comportamiento demuestra que la representación gráfica de la señal y la capacidad del equipo para obtener una medición válida no son necesariamente equivalentes. La variación de la onda podría estar relacionada con las características de la señal simulada y las condiciones de adquisición; sin embargo, no es posible establecer una causa específica únicamente a partir de las fotografías.
+
+| Variable | Valor de referencia | Resultado del monitor |
+|---|---:|---|
+| Frecuencia cardíaca (bpm) | 80 | Sin pulso |
+| SpO2 (%) | 99 | Exceso de luz |
+| Índice de perfusión | 0.2 | Sin lectura válida |
 
 ### 5.2.4. Simulación de taquicardia
 
 Finalmente, se configuró una frecuencia cardíaca de 140 bpm y una SpO2 del 98 %. Se registraron las lecturas del monitor y se observó la señal fotopletismográfica generada durante esta condición.
 
-**Figura 8. Simulación de taquicardia durante la prueba 2.**
+**Figura 9. Simulación de taquicardia durante la prueba 2.**
 
-![Prueba 2 - Taquicardia](../evidencias/prueba_2/taquicardia.jpg)
+<p align="center">
+  <img width="1280" height="960" alt="Prueba2__4" src="https://github.com/user-attachments/assets/6e72ac52-977d-4882-9900-d3da7e8f556a" />
+
+</p>
+<p align="center">
+  <strong>Figura 15.</strong> Lectura del monitor durante la simulación de taquicardia durante la prueba 2.
+</p>
 
 | Variable | Valor de referencia | Valor del monitor |
 |---|---:|---:|
 | Frecuencia cardíaca (bpm) | 140 | 140 |
 | SpO2 (%) | 98 | 98 |
 
-#### Resultados estadísticos de los valores de referencia y los registrados en la prueba 2
+La onda fotopletismográfica presenta oscilaciones más frecuentes y próximas entre sí, con una sucesión continua de pulsos que refleja la disminución del intervalo entre ciclos debido al incremento de la frecuencia cardíaca. A pesar de la mayor frecuencia, la señal conserva una morfología periódica y permite distinguir los pulsos de manera consecutiva. Por otra parte, la saturación de oxígeno permanece en el valor de referencia del 98 %, sin presentar una variación apreciable durante la simulación. En la captura no se distingue claramente un mensaje de alarma por frecuencia cardíaca elevada, por lo que su activación no puede confirmarse únicamente con este registro visual.
 
-Para evaluar el comportamiento del monitor BeneHeart D30 durante la segunda prueba, se compararon los valores configurados en el simulador Pronk OxSim OX-1 con las mediciones registradas en el monitor. Se analizaron las variables de frecuencia cardíaca (FC) y saturación periférica de oxígeno (SpO₂) para las cuatro condiciones experimentales. Para establecer las diferencias entre ambas mediciones, se calcularon el error absoluto y el error porcentual.
+### Resultados estadísticos de los valores de referencia y los registrados en la prueba 2
+
+Para evaluar el comportamiento del monitor uMEC 100 durante la segunda prueba, se compararon los valores configurados en el simulador Pronk OxSim OX-1 con las mediciones registradas en el monitor. Se analizaron las variables de frecuencia cardíaca (FC) y saturación periférica de oxígeno (SpO2) para las cuatro condiciones experimentales. Para establecer las diferencias entre ambas mediciones, se calcularon el error absoluto y el error porcentual.
 
 El error absoluto se determinó mediante la diferencia en valor absoluto entre el valor registrado por el monitor y el valor de referencia. El error porcentual permitió expresar esta diferencia en relación con el valor configurado en el simulador.
 
 | Condición | Variable | Referencia | Monitor | Error absoluto | Error porcentual |
 |---|---|---:|---:|---:|---:|
 | Bradicardia | FC (bpm) | 40 | 40 | 0 | 0 % |
-| Bradicardia | SpO₂ (%) | 95 | 95 | 0 | 0 % |
+| Bradicardia | SpO2 (%) | 95 | 95 | 0 | 0 % |
 | Desaturación | FC (bpm) | 80 | 80 | 0 | 0 % |
-| Desaturación | SpO₂ (%) | 85 | 85 | 0 | 0 % |
-| Baja perfusión | FC (bpm) | 80 | Sin pulso | N/C | N/C |
-| Baja perfusión | SpO₂ (%) | 99 | Exceso de luz | N/C | N/C |
+| Desaturación | SpO2 (%) | 85 | 85 | 0 | 0 % |
+| Baja perfusión | FC (bpm) | 80 | Sin pulso | NAN | NAN |
+| Baja perfusión | SpO2 (%) | 99 | Exceso de luz | NAN | NAN |
 | Taquicardia | FC (bpm) | 140 | 140 | 0 | 0 % |
-| Taquicardia | SpO₂ (%) | 98 | 98 | 0 | 0 % |
-
-*N/C: No calculable, debido a que el monitor no proporcionó una medición numérica válida.*
+| Taquicardia | SpO2 (%) | 98 | 98 | 0 | 0 % |
 
 A partir de los registros disponibles, se observa que el monitor presentó coincidencia con los valores de referencia en las condiciones de bradicardia, desaturación y taquicardia. En estos tres escenarios, los errores absolutos y porcentuales fueron iguales a cero para ambas variables.
 
-Por otra parte, durante la simulación de baja perfusión (Low Perfusion), configurada con una SpO₂ de referencia del 99 % y una frecuencia cardíaca de 80 bpm, el monitor no logró proporcionar una lectura válida. En la pantalla se visualizaron los mensajes «Exceso de luz» para SpO₂ y «Sin pulso», lo que evidenció dificultades en la detección de la señal de pulsioximetría.
+Por otra parte, durante la simulación de baja perfusión (Low Perfusion), configurada con una SpO2 de referencia del 99 % y una frecuencia cardíaca de 80 bpm, el monitor no logró proporcionar una lectura válida. En la pantalla se visualizaron los mensajes «Exceso de luz para SpO2» y «Sin pulso», lo que evidenció dificultades en la detección y procesamiento de la señal de pulsioximetría.
 
-Debido a esta condición, no fue posible establecer una comparación numérica entre los valores de referencia y los registrados por el monitor, por lo que no se calcularon los errores absoluto ni porcentual para este escenario. Este comportamiento pudo estar relacionado con una configuración inadecuada del equipo o con dificultades en la detección de la señal durante la simulación. Sin embargo, no se cuenta con evidencia suficiente para determinar la causa exacta.
+Debido a esta condición, no fue posible establecer una comparación numérica entre los valores de referencia y los registrados por el monitor, por lo que no se calcularon los errores absoluto ni porcentual para este escenario. Este comportamiento pudo estar relacionado con las condiciones de adquisición de la señal, la configuración del equipo o la detección de la señal durante la simulación. Sin embargo, no se cuenta con evidencia suficiente para determinar la causa exacta.
 
-Considerando únicamente los tres escenarios con mediciones numéricas válidas, el error absoluto medio fue de 0 bpm para la frecuencia cardíaca y de 0 puntos porcentuales para la SpO₂. Estos resultados muestran una correspondencia entre las mediciones del monitor y los valores de referencia en las condiciones que pudieron verificarse. No obstante, la falla presentada durante la baja perfusión evidencia una limitación en la adquisición de la señal, que debe tenerse en cuenta al evaluar el desempeño del equipo.
+Considerando únicamente los tres escenarios con mediciones numéricas válidas, el error absoluto medio fue de 0 bpm para la frecuencia cardíaca y de 0 puntos porcentuales para la SpO2. Estos resultados muestran una correspondencia entre las mediciones del monitor y los valores de referencia en las condiciones que pudieron verificarse. No obstante, la falla presentada durante la baja perfusión evidencia una limitación en la adquisición de la señal, que debe tenerse en cuenta al evaluar el desempeño del equipo.
 
 ---
 
@@ -430,7 +474,7 @@ Al comparar los resultados de las dos pruebas experimentales, se observa que el 
 
 La principal diferencia se presentó durante la simulación de baja perfusión (Low Perfusion). En la primera prueba, el monitor registró una frecuencia cardíaca de 80 bpm y una SpO₂ de 100 %, frente a los valores de referencia de 80 bpm y 99 %, respectivamente. Esto representó un error absoluto de 0 bpm para la frecuencia cardíaca y de 1 punto porcentual para la saturación de oxígeno, equivalente a un error porcentual aproximado del 1,01 %.
 
-En contraste, durante la segunda prueba, el monitor no proporcionó una lectura válida para esta misma condición. En la pantalla aparecieron los mensajes «Exceso de luz» para SpO₂ y «Sin pulso» para la frecuencia cardíaca, lo que impidió realizar los cálculos de error correspondientes. Por tanto, mientras que en el primer ensayo se obtuvo una lectura numérica, en el segundo se presentó una dificultad en la adquisición de las señales.
+En contraste, durante la segunda prueba, el monitor no proporcionó una lectura válida para esta misma condición. En la pantalla aparecieron los mensajes "Exceso de luz" para SpO₂ y "Sin pulso" para la frecuencia cardíaca, lo que impidió realizar los cálculos de error correspondientes. Por tanto, mientras que en el primer ensayo se obtuvo una lectura numérica, en el segundo se presentó una dificultad en la adquisición de las señales.
 
 Esta diferencia evidencia que el comportamiento del monitor no fue completamente reproducible entre ambos ensayos bajo la condición de baja perfusión. Aunque se sospecha que una configuración inadecuada del equipo pudo influir en el resultado de la segunda prueba, no se cuenta con información suficiente para confirmar esta causa.
 
@@ -440,47 +484,27 @@ En general, los resultados muestran una respuesta consistente del monitor en las
 
 ### 6.1. Análisis 1. Evaluación estadística de las diferencias entre los valores de referencia y los registrados por el monitor
 
-Al comparar los resultados de las dos pruebas experimentales, se encontró que el monitor BeneHeart D30 presentó coincidencia entre los valores de referencia y las mediciones registradas durante las condiciones de bradicardia, desaturación y taquicardia. En estos tres escenarios, tanto la frecuencia cardíaca como la saturación periférica de oxígeno presentaron diferencias iguales a cero, lo que indica que el equipo logró reproducir los valores configurados en el simulador Pronk OxSim OX-1.
+La comparación estadística de los resultados de las dos pruebas experimentales permitió determinar las diferencias entre los valores configurados en el simulador Pronk OxSim OX-1 y los registrados por el monitor. En las condiciones de bradicardia, desaturación y taquicardia se obtuvo una coincidencia exacta entre ambas mediciones, tanto para la frecuencia cardíaca como para la saturación periférica de oxígeno. Esto representa diferencias absolutas de 0 bpm para la frecuencia cardíaca y de 0 puntos porcentuales para la SpO₂ en dichos escenarios.
 
-En la primera prueba, la única diferencia numérica se presentó durante la simulación de baja perfusión. Mientras que el simulador estaba configurado con una SpO₂ del 99 %, el monitor registró un valor del 100 %, correspondiente a una diferencia de un punto porcentual y un error relativo aproximado del 1,01 %. La frecuencia cardíaca, por su parte, coincidió con el valor de referencia de 80 bpm. Al considerar los cuatro escenarios, el error absoluto medio fue de 0 bpm para la frecuencia cardíaca y de 0,25 puntos porcentuales para la SpO₂.
+En la primera prueba, la única diferencia numérica se presentó durante la simulación de baja perfusión. El simulador se encontraba configurado con una SpO₂ del 99 %, mientras que el monitor registró un valor del 100 %, lo que corresponde a una diferencia absoluta de un punto porcentual y un error relativo aproximado del 1,01 %. Para la frecuencia cardíaca no se presentó diferencia respecto al valor de referencia de 80 bpm. Al considerar los cuatro escenarios evaluados, el error absoluto medio fue de 0 bpm para la frecuencia cardíaca y de 0,25 puntos porcentuales para la SpO₂. Estos resultados reflejan una diferencia promedio reducida entre los valores simulados y los registrados durante esta prueba.
 
-En la segunda prueba, las mediciones también coincidieron con los valores de referencia en los escenarios de bradicardia, desaturación y taquicardia. Sin embargo, durante la baja perfusión, el monitor presentó los mensajes «Exceso de luz» para SpO₂ y «Sin pulso» para la frecuencia cardíaca, por lo que no fue posible obtener mediciones numéricas válidas. En consecuencia, el análisis estadístico de esta prueba se limitó a los tres escenarios en los que se obtuvieron lecturas, con un error absoluto medio de cero para ambas variables.
+En la segunda prueba, las tres condiciones en las que se obtuvieron mediciones numéricas presentaron diferencias absolutas iguales a cero para ambas variables. Sin embargo, durante la simulación de baja perfusión no fue posible calcular el error, debido a que el monitor no proporcionó valores válidos de frecuencia cardíaca ni de SpO₂. Por esta razón, el error absoluto medio se calculó únicamente con los tres escenarios disponibles, obteniendo 0 bpm para la frecuencia cardíaca y 0 puntos porcentuales para la SpO₂. Es importante señalar que estos promedios no incluyen la condición de baja perfusión y, por tanto, no representan la totalidad de los escenarios evaluados.
 
-La diferencia entre los resultados de baja perfusión podría estar relacionada con las condiciones de adquisición de la señal o con una posible desconfiguración del monitor durante el segundo ensayo. El mensaje de exceso de luz también sugiere una posible interferencia en la detección óptica del sensor. No obstante, como no se realizaron verificaciones adicionales para identificar el origen del problema, no es posible establecer una causa definitiva.
+Al comparar ambas pruebas, se observa que la frecuencia cardíaca presentó coincidencia con los valores de referencia en todos los escenarios donde se obtuvieron lecturas válidas. Para la SpO₂, la primera prueba presentó una diferencia de un punto porcentual en baja perfusión, mientras que en la segunda no fue posible establecer una diferencia numérica para esta condición. Esta variación entre ensayos podría estar relacionada con las condiciones de adquisición de la señal o con una posible interferencia óptica durante la segunda prueba. No obstante, al no contar con verificaciones adicionales, no es posible determinar el origen específico de esta diferencia.
 
-En general, la comparación estadística muestra una correspondencia entre los valores simulados y los registrados en la mayoría de las condiciones evaluadas. Sin embargo, la imposibilidad de obtener lecturas durante la segunda prueba de baja perfusión evidencia que la coincidencia numérica en determinados escenarios no garantiza que el monitor pueda adquirir correctamente las señales bajo todas las condiciones de funcionamiento.
+En términos generales, los resultados estadísticos evidencian una baja diferencia entre los valores de referencia y los registrados por el monitor en las condiciones donde se obtuvieron mediciones válidas. Sin embargo, la ausencia de datos durante la segunda prueba de baja perfusión limita la comparación estadística completa y pone de manifiesto que la evaluación del equipo también debe considerar su capacidad para obtener mediciones válidas, además de la exactitud de los valores que logra registrar.
 
 ### 6.2. Análisis 2. Relación entre la forma de onda visualizada en el monitor y la frecuencia cardíaca/saturación periférica de oxígeno
 
-Durante las pruebas experimentales se observó que las señales visualizadas en el monitor BeneHeart D30 presentaron variaciones relacionadas con las condiciones fisiológicas configuradas en el simulador. La frecuencia cardíaca se reflejó principalmente en la periodicidad de los pulsos, mientras que la saturación periférica de oxígeno y las condiciones de perfusión estuvieron relacionadas con la adquisición y calidad de la señal fotopletismográfica.
-
-En la condición de bradicardia, configurada a 40 bpm y una SpO₂ del 95 %, se presentó una menor frecuencia de repetición de los pulsos, lo que se refleja en una mayor separación temporal entre ellos. Por el contrario, durante la simulación de taquicardia, con una frecuencia cardíaca de 140 bpm y una SpO₂ del 98 %, los pulsos aparecieron con menor separación, debido al incremento de la frecuencia cardíaca. Este comportamiento corresponde a la relación esperada entre la frecuencia cardíaca y la periodicidad de la señal.
-
-Durante la condición de desaturación, configurada con una frecuencia cardíaca de 80 bpm y una SpO₂ del 85 %, se evaluó la respuesta del monitor ante una disminución de la saturación de oxígeno. En este escenario, la frecuencia de repetición de los pulsos estuvo determinada principalmente por la frecuencia cardíaca, mientras que el valor de SpO₂ representó el nivel de oxigenación establecido en el simulador. Es importante señalar que una disminución de la saturación no implica necesariamente una reducción proporcional en la amplitud de la onda fotopletismográfica.
-
-La condición de baja perfusión presentó diferencias importantes entre los dos ensayos. En la primera prueba, el monitor logró obtener una lectura de SpO₂ del 100 %, aunque el simulador estaba configurado en 99 %. En la segunda, aparecieron los mensajes «Exceso de luz» y «Sin pulso», lo que impidió visualizar una medición válida. Una posible explicación es que la reducción de la perfusión haya dificultado la detección del componente pulsátil de la señal. Adicionalmente, las condiciones de conexión, posición del sensor o configuración del monitor pudieron influir en la adquisición, aunque no fue posible comprobarlo durante la práctica.
-
-Estos resultados permiten establecer que la frecuencia cardíaca influye directamente en la separación temporal de los pulsos, mientras que las condiciones de perfusión pueden afectar la calidad de la señal fotopletismográfica y la capacidad del monitor para obtener una lectura de SpO₂. Por tanto, la interpretación de las variables fisiológicas debe considerar tanto los valores numéricos como las características de las señales visualizadas en el equipo.
-
-## 6.3. Comportamiento durante la simulación de baja perfusión
-
-El modo Low Perfusion permitió evaluar el comportamiento del sistema de pulsioximetría ante una reducción de la componente pulsátil de la señal.
-
-En esta condición, el simulador genera una SpO2 de 99 %, una frecuencia cardíaca de 80 bpm y un índice de perfusión aproximado de 0.2 [2].
-
-La reducción del índice de perfusión representa una condición de adquisición más exigente para el monitor, debido a que disminuye la intensidad relativa de la señal pulsátil detectada por el sensor.
-
-La calidad de la señal fotopletismográfica resulta especialmente importante en este escenario, puesto que una señal de menor amplitud puede dificultar la identificación de las pulsaciones. La FDA reconoce que una circulación deficiente puede afectar la precisión de las mediciones de pulsioximetría [1].
-
-Por esta razón, el análisis de esta condición debe considerar no solamente el valor numérico de SpO2, sino también la estabilidad de la lectura y las características de la onda presentada por el monitor.
+El comportamiento de las ondas fotopletismográficas permitió reconocer la relación entre la frecuencia cardíaca y la periodicidad de la señal, así como la influencia de las condiciones de perfusión sobre su adquisición. En términos generales, los cambios en la frecuencia cardíaca se reflejaron en la separación temporal de los pulsos, mientras que las variaciones de saturación de oxígeno no produjeron necesariamente modificaciones equivalentes en la morfología de la onda. Esto se debe a que la señal fotopletismográfica representa las variaciones del volumen sanguíneo periférico, mientras que la SpO₂ corresponde a la proporción de hemoglobina oxigenada estimada por el pulsioxímetro. Por otra parte, la condición de baja perfusión permitió identificar una situación particular: aunque el monitor continuó mostrando una representación gráfica de la señal, presentó dificultades para proporcionar mediciones válidas. Además, las dos capturas obtenidas durante esta condición mostraron diferencias visuales en la morfología de la onda, sin que se recuperara la lectura de las variables fisiológicas. Este comportamiento indica que la visualización de una señal pulsátil no garantiza por sí sola que el equipo pueda procesarla adecuadamente para obtener resultados confiables. En conjunto, los hallazgos permiten reconocer que la frecuencia cardíaca influye principalmente en la periodicidad de la señal, mientras que las condiciones de perfusión pueden afectar su calidad y la capacidad del monitor para realizar la medición.
 
 ### 6.3. Discusión general de los resultados
 
-Uno de los resultados más relevantes de la práctica se presentó durante la simulación de baja perfusión, debido a que el comportamiento del monitor fue diferente entre los dos ensayos. En la primera prueba, el equipo logró registrar una SpO₂ del 100 %, aunque el simulador estaba configurado en 99 %. En cambio, durante la segunda prueba aparecieron los mensajes «Exceso de luz» y «Sin pulso», impidiendo obtener una medición válida.
+Uno de los resultados más relevantes de la práctica se presentó durante la simulación de baja perfusión, debido a que el comportamiento del monitor fue diferente entre los dos ensayos. En la primera prueba, el equipo logró registrar una SpO₂ del 100 %, aunque el simulador estaba configurado en 99 %. En cambio, durante la segunda prueba aparecieron los mensajes "Exceso de luz" y "Sin pulso", impidiendo obtener una medición válida.
 
 Una posible explicación de esta diferencia está relacionada con las condiciones de adquisición de la señal de pulsioximetría. El funcionamiento de este sistema depende de la detección de las variaciones de luz transmitida o reflejada a través del tejido, las cuales permiten identificar el componente pulsátil de la sangre arterial. Cuando existe una perfusión periférica reducida, la amplitud de este componente puede disminuir y dificultar su diferenciación respecto a otros componentes de la señal. Esto puede afectar la identificación del pulso y la estimación de la saturación de oxígeno.
 
-Adicionalmente, el mensaje «Exceso de luz» sugiere que el monitor detectó una condición que interfería con la adquisición óptica. Por esta razón, también es posible que factores relacionados con la posición del sensor, la iluminación externa, la conexión o la configuración del equipo hayan influido en el resultado. Sin embargo, estas posibilidades no pudieron comprobarse durante la práctica, por lo que no es posible establecer una causa definitiva.
+Adicionalmente, el mensaje "Exceso de luz" sugiere que el monitor detectó una condición que interfería con la adquisición óptica. Por esta razón, también es posible que factores relacionados con la posición del sensor, la iluminación externa, la conexión o la configuración del equipo hayan influido en el resultado. Sin embargo, estas posibilidades no pudieron comprobarse durante la práctica, por lo que no es posible establecer una causa definitiva.
 
 Por otra parte, la coincidencia de las mediciones de frecuencia cardíaca y SpO₂ durante las condiciones de bradicardia, desaturación y taquicardia muestra que el monitor pudo identificar adecuadamente las variables simuladas en esos escenarios. Esto contrasta con la dificultad presentada durante la baja perfusión y evidencia que la calidad de la señal constituye un factor importante para obtener mediciones confiables.
 
@@ -489,6 +513,25 @@ En consecuencia, los resultados permiten reconocer que el desempeño de un monit
 ---
 
 # VII. Discusión
+### 7.1. ¿Cuál es el principio de operación del simulador Pronk OxSim OX-1 para simular una onda pulsátil?
+
+El simulador Pronk OxSim OX-1 funciona mediante un sistema óptico que reproduce las condiciones de medición de un pulsioxímetro sin necesidad de utilizar un paciente real. Para ello, interactúa directamente con el sensor del monitor, interceptando los destellos de luz roja e infrarroja emitidos por sus LED y bloqueándolos para generar nuevos destellos ópticos mediante mecanismos electrónicos, ópticos y mecánicos. De esta manera, el simulador produce una señal que representa el comportamiento de la luz al atravesar el tejido de un dedo humano durante la medición de la saturación de oxígeno [2].
+
+El funcionamiento del pulsioxímetro se basa en la diferencia de absorción de la luz roja e infrarroja por parte de la oxihemoglobina y la desoxihemoglobina. Durante el ciclo cardíaco, el volumen de sangre arterial aumenta en la sístole y disminuye en la diástole, generando variaciones en la cantidad de luz absorbida. Estas variaciones constituyen el componente pulsátil de la señal, conocido como componente AC, mientras que la absorción relativamente constante de los tejidos y otros componentes sanguíneos corresponde al componente DC [6]. A partir de la relación entre ambos componentes para las dos longitudes de onda, el equipo calcula un índice de modulación que utiliza para estimar la SpO₂ [7].
+
+El OxSim reproduce estas condiciones mediante diferentes configuraciones que permiten evaluar la respuesta del monitor ante distintos valores de frecuencia cardíaca, saturación de oxígeno y perfusión. Durante la práctica se utilizaron los modos de bradicardia, desaturación, baja perfusión y taquicardia, con valores de referencia de 40, 80 y 140 bpm, y saturaciones de 85 %, 95 %, 98 % y 99 %, según el escenario. En particular, el modo de baja perfusión establece una SpO₂ de 99 %, una frecuencia cardíaca de 80 bpm y un índice de perfusión aproximado de 0,2 [2].
+
+Por lo tanto, el simulador permite comprobar el comportamiento del monitor frente a señales ópticas controladas y reproducibles, facilitando la evaluación de sus mediciones, alarmas y capacidad para procesar señales pulsátiles bajo diferentes condiciones de funcionamiento [2].
+
+### 7.2. ¿Por qué una SpO₂ baja puede ser una falsa alarma cuando existe mala perfusión?
+
+La medición de la saturación de oxígeno mediante pulsioximetría depende de la detección de los cambios de volumen de sangre arterial que se producen con cada latido cardíaco. Cuando existe una perfusión periférica deficiente, disminuye la cantidad de sangre pulsátil que llega al sitio donde se encuentra ubicado el sensor, lo que reduce la amplitud del componente AC de la señal fotopletismográfica [6]. Como consecuencia, disminuye la relación señal-ruido y se dificulta la identificación de la señal arterial frente a otros componentes ópticos y al ruido presente durante la adquisición [7].
+
+Esta condición puede ocasionar lecturas inestables, interrupciones en la medición o la imposibilidad de obtener un valor de SpO₂. En determinadas circunstancias, el procesamiento de una señal de baja calidad también puede producir valores de saturación inferiores a los reales y generar falsas alarmas de desaturación [6], [7]. Por esta razón, una lectura baja no debe interpretarse de manera aislada como evidencia definitiva de hipoxemia, sino que debe considerarse junto con la calidad de la señal, la intensidad del pulso y las condiciones del paciente. La FDA también reconoce la mala circulación como uno de los factores que pueden afectar la precisión de los pulsioxímetros [1].
+
+En la segunda prueba de la práctica, esta situación se evidenció durante la simulación de baja perfusión. Aunque el OxSim se configuró con una saturación de referencia del 99 %, una frecuencia cardíaca de 80 bpm y un índice de perfusión aproximado de 0,2, el monitor Mindray uMEC 100 no logró proporcionar valores numéricos válidos de frecuencia cardíaca ni de SpO₂. En su lugar, presentó los mensajes "Sin pulso" y "Exceso de luz para SpO₂". Este comportamiento muestra que, bajo condiciones de perfusión reducida, el equipo puede tener dificultades para reconocer y procesar adecuadamente la señal óptica, incluso cuando se observa una onda en pantalla. El manual del OxSim advierte que su modo de baja perfusión está diseñado para representar una condición exigente y que algunos monitores pueden presentar dificultades para obtener mediciones en este escenario [2].
+
+En consecuencia, una SpO₂ baja o una alarma de desaturación durante una condición de mala perfusión podría estar relacionada con una limitación en la adquisición de la señal y no necesariamente con una disminución real de la oxigenación sanguínea. Sin embargo, esto no significa que todas las lecturas bajas en pacientes con mala perfusión sean falsas, ya que la hipoxemia también puede estar presente. Por ello, es necesario verificar la calidad de la señal y contrastar la medición con otras evaluaciones clínicas cuando exista incertidumbre [6], [7].
 
 
 ---
@@ -501,12 +544,16 @@ La práctica permitió comprobar el funcionamiento del monitor de signos vitales
 
 # REFERENCIAS
 
-[1] U.S. Food and Drug Administration (FDA), "Pulse Oximeters," FDA, 2025. [En línea]. Disponible en: https://www.fda.gov/medical-devices/products-and-medical-procedures/pulse-oximeters. [Consultado: 3-nov-2026].
+[1] U.S. Food and Drug Administration (FDA), "Pulse Oximeters," FDA, 2025. [En línea]. Disponible en: https://www.fda.gov/medical-devices/products-and-medical-procedures/pulse-oximeters.
 
-[2] Pronk Technologies, "OxSim SpO2 Simulator: Operator's Manual," Rev. O, Jul. 18, 2017. [En línea]. Disponible en: https://www.pronktech.com/wp-content/uploads/2015/02/501-0603-OX-1-Op-Manual-Rev-O.pdf. [Consultado: 3-nov-2026].
+[2] Pronk Technologies, "OxSim SpO2 Simulator: Operator's Manual," Rev. O, Jul. 18, 2017. [En línea]. Disponible en: https://www.pronktech.com/wp-content/uploads/2015/02/501-0603-OX-1-Op-Manual-Rev-O.pdf.
 
-[3] Shenzhen Mindray Bio-Medical Electronics Co., Ltd., "uMEC 60/uMEC 70/uMEC 80/uMEC 100/uMEC 120/uMEC 150 Patient Monitor: Operator's Manual," Rev. 2.0, Jul. 2023. [En línea]. Disponible en: https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/patient-monitor/umec-series-60-70-80-100-120-150-safety-and-performance-information.pdf. [Consultado: 3-nov-2026].
+[3] Shenzhen Mindray Bio-Medical Electronics Co., Ltd., "uMEC 60/uMEC 70/uMEC 80/uMEC 100/uMEC 120/uMEC 150 Patient Monitor: Operator's Manual," Rev. 2.0, Jul. 2023. [En línea]. Disponible en: https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/patient-monitor/umec-series-60-70-80-100-120-150-safety-and-performance-information.pdf.
 
-[4] OpenOximetry, "Does low perfusion impact pulse oximeter accuracy?," OpenOximetry Project. [En línea]. Disponible en: https://openoximetry.org/faq/does-low-perfusion-impact-pulse-oximeter-accuracy/. [Consultado: 3-nov-2026].
+[4] OpenOximetry, "Does low perfusion impact pulse oximeter accuracy?," OpenOximetry Project. [En línea]. Disponible en: https://openoximetry.org/faq/does-low-perfusion-impact-pulse-oximeter-accuracy/.
 
-[5] U.S. Food and Drug Administration (FDA), "Pulse Oximeters - Premarket Notification Submissions (510(k)s): Guidance for Industry and Food and Drug Administration Staff," FDA. [En línea]. Disponible en: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/pulse-oximeters-premarket-notification-submissions-510ks-guidance-industry-and-food-and-drug. [Consultado: 3-nov-2026].
+[5] U.S. Food and Drug Administration (FDA), "Pulse Oximeters - Premarket Notification Submissions (510(k)s): Guidance for Industry and Food and Drug Administration Staff," FDA. [En línea]. Disponible en: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/pulse-oximeters-premarket-notification-submissions-510ks-guidance-industry-and-food-and-drug.
+
+[6] E. D. Chan, M. M. Chan y M. M. Chan, “Pulse oximetry: Understanding its basic principles facilitates appreciation of its limitations,” Respiratory Medicine, vol. 107, n.º 6, pp. 789–799, Jun. 2013. doi: 10.1016/j.rmed.2013.02.004. [En línea]. Disponible en: https://www.resmedjournal.com/article/S0954-6111(13)00053-X/fulltext. 
+
+[7] A. Jubran, “Pulse oximetry,” Critical Care, vol. 19, art. 272, 2015. doi: 10.1186/s13054-015-0984-8. [En línea]. Disponible en: https://pmc.ncbi.nlm.nih.gov/articles/PMC4504215/.
