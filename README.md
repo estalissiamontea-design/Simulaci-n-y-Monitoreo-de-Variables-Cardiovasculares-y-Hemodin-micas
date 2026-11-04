@@ -469,9 +469,9 @@ La siguiente tabla corresponde a la verificación de las alarmas solicitada en l
 
 | Condición evaluada | Límite configurado en el uMEC 100 | Valor simulado en el OxSim | ¿Alarma activa? | Tiempo de respuesta |
 |---|---|---:|---|---|
-| SpO₂ baja | Inferior: 90 % | 85 % | Sí, se observó la indicación visual «SpO₂ bajo menor de 90 %» en la segunda prueba. | Verificación a los 5 s* |
-| SpO₂ alta (Low Perfusion) | Superior: 97 % | 99 % | No se confirmó la activación de la alarma específica de SpO₂ alta. En la segunda prueba aparecieron los mensajes «Sin pulso» y «Exceso de luz para SpO₂». | Verificación a los 5 s* |
-| Taquicardia | Superior: 120 bpm | 140 bpm | Sí, según el registro de la primera prueba. En la segunda no se confirmó visualmente. | No se registró el tiempo exacto. |
+| SpO₂ baja | Inferior: 90 % | 85 % | Sí, se observó la indicación visual «SpO₂ bajo menor de 90 %» en ambas pruebas. | Verificación a los 5 s |
+| SpO₂ alta (Low Perfusion) | Superior: 97 % | 99 % |  Sí se observó la indicación visual en la primera prueba. En la segunda prueba No se confirmó la activación de la alarma específica de SpO₂ alta, aparecieron los mensajes "Sin pulso" y "Exceso de luz para SpO₂". | Verificación a los 5 s |
+| Taquicardia | Superior: 120 bpm | 140 bpm | Sí, según el registro de la primera prueba. En la segunda no se confirmó visualmente. | Verificación a los 4 s |
 
 Durante la simulación de SpO₂ baja, el valor establecido en el OxSim fue de 85 %, inferior al límite de alarma de 90 % configurado en el monitor. En la segunda prueba se registró la indicación visual de saturación baja, lo que evidencia la respuesta del equipo ante esta condición.
 
