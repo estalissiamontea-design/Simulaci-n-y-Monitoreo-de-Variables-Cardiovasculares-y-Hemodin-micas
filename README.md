@@ -401,8 +401,6 @@ Se seleccionó el modo Low Perfusion del OxSim OX-1, estableciendo una SpO2 del 
 
 En la primera captura se observa que el monitor continúa mostrando una onda fotopletismográfica periódica, con oscilaciones reconocibles y una morfología relativamente estable. Sin embargo, el equipo presenta los mensajes «Sin pulso» y «Exceso de luz para SpO2», sin proporcionar valores numéricos válidos de frecuencia cardíaca y saturación de oxígeno. Esto evidencia que la presencia visual de una onda en pantalla no garantiza que el monitor pueda identificarla y procesarla correctamente para calcular las variables fisiológicas. Por tanto, aunque se conserva una representación gráfica de las oscilaciones, el equipo no logra validar la señal para realizar las mediciones correspondientes.
 
-**Figura 8. Segunda captura de la señal fotopletismográfica durante la simulación de baja perfusión en la prueba 2.**
-
 <p align="center">
   <img width="1280" height="960" alt="Prueba2_3_2" src="https://github.com/user-attachments/assets/00783af0-4f19-41fe-882b-fb53d8dd0636" />
 
@@ -422,8 +420,6 @@ En la segunda captura se aprecia un cambio en la apariencia de la onda fotopleti
 ### 5.2.4. Simulación de taquicardia
 
 Finalmente, se configuró una frecuencia cardíaca de 140 bpm y una SpO2 del 98 %. Se registraron las lecturas del monitor y se observó la señal fotopletismográfica generada durante esta condición.
-
-**Figura 9. Simulación de taquicardia durante la prueba 2.**
 
 <p align="center">
   <img width="1280" height="960" alt="Prueba2__4" src="https://github.com/user-attachments/assets/6e72ac52-977d-4882-9900-d3da7e8f556a" />
