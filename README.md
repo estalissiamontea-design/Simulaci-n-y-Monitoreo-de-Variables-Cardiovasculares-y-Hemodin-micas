@@ -304,7 +304,7 @@ Para esta condición, se configuró el límite superior de alarma de SpO2 en 97 
 | SpO₂ (%) | 99 | 100 |
 | Índice de perfusión (PI) | 0,2 | 0,45 |
 
-La onda fotopletismográfica muestra variaciones cíclicas del volumen sanguíneo arterial periférico, con un ascenso pronunciado asociado a la llegada de sangre durante la sístole y un descenso progresivo durante la diástole. Aunque se conserva un patrón pulsátil reconocible, la condición de baja perfusión se refleja en una menor contribución del componente pulsátil respecto a la señal óptica total. En este caso, el índice de perfusión configurado en el simulador fue de 0,2, mientras que el monitor indicó 0,45. Esta diferencia muestra que ambos equipos presentaron valores distintos para este parámetro durante la simulación.
+La señal fotopletismográfica conserva variaciones cíclicas asociadas a los cambios de volumen sanguíneo periférico durante el ciclo cardíaco. En esta condición, el simulador se configuró con un índice de perfusión (PI) aproximado de 0,2, mientras que el monitor presentó un valor de 0,45. Esta diferencia indica que los valores mostrados por ambos equipos no coincidieron, aunque debe tenerse en cuenta que el índice de perfusión calculado por el monitor depende del procesamiento de la señal óptica adquirida. Por tanto, la morfología de la onda permite observar la presencia de variaciones pulsátiles, pero no permite determinar por sí sola el grado de perfusión ni explicar la diferencia entre los valores registrados.
 
 ### 5.1.4. Simulación de taquicardia
 
